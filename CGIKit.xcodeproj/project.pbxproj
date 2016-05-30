@@ -118,6 +118,7 @@
 		1D0782141CFC8693009ED89D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D0782221CFC8919009ED89D /* CGIAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIAppDelegate.h; sourceTree = "<group>"; };
 		1D0782231CFC8919009ED89D /* CGIAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIAppDelegate.m; sourceTree = "<group>"; };
+		1D0782281CFC9758009ED89D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		1D71589E1CF46CCC009CD825 /* CGIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIRequest.h; sourceTree = "<group>"; };
 		1D71589F1CF46CCC009CD825 /* CGIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIRequest.m; sourceTree = "<group>"; };
 		1D7158A21CF46D0A009CD825 /* CGIResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIResponse.h; sourceTree = "<group>"; };
@@ -179,6 +180,7 @@
 		1DF06B6C1CF1B95A002E3AEF = {
 			isa = PBXGroup;
 			children = (
+				1D0782281CFC9758009ED89D /* .gitignore */,
 				1DF06B781CF1B95A002E3AEF /* CGIKit */,
 				1DF06BBE1CF235EC002E3AEF /* CGIKitTests */,
 				1DF06B811CF1B9BD002E3AEF /* Subprojects */,
