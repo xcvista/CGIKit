@@ -7,16 +7,146 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D0781DD1CF88748009ED89D /* CGISessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D0781DB1CF88748009ED89D /* CGISessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D0781DE1CF88748009ED89D /* CGISessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0781DC1CF88748009ED89D /* CGISessionManager.m */; };
+		1D0781E91CF94689009ED89D /* CGIRequestTestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0781E81CF94689009ED89D /* CGIRequestTestSwift.swift */; };
+		1D0781EC1CFC5295009ED89D /* CGICookie.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D0781EA1CFC5295009ED89D /* CGICookie.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D0781ED1CFC5295009ED89D /* CGICookie.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0781EB1CFC5295009ED89D /* CGICookie.m */; };
+		1D07820E1CFC8693009ED89D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D07820D1CFC8693009ED89D /* main.m */; };
+		1D0782191CFC86C0009ED89D /* CGIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF06B761CF1B95A002E3AEF /* CGIKit.framework */; };
+		1D07821A1CFC86C0009ED89D /* CGIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF06B761CF1B95A002E3AEF /* CGIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1D07821F1CFC86D2009ED89D /* CGXFastCGI.plugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1DF06BA51CF1BAFF002E3AEF /* CGXFastCGI.plugin */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1D0782241CFC8919009ED89D /* CGIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0782231CFC8919009ED89D /* CGIAppDelegate.m */; };
+		1D7158A01CF46CCC009CD825 /* CGIRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D71589E1CF46CCC009CD825 /* CGIRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D7158A11CF46CCC009CD825 /* CGIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D71589F1CF46CCC009CD825 /* CGIRequest.m */; };
+		1D7158A41CF46D0A009CD825 /* CGIResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D7158A21CF46D0A009CD825 /* CGIResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D7158A51CF46D0A009CD825 /* CGIResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7158A31CF46D0A009CD825 /* CGIResponse.m */; };
+		1D7158A81CF46D15009CD825 /* CGIServerHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D7158A61CF46D15009CD825 /* CGIServerHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D7158A91CF46D15009CD825 /* CGIServerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7158A71CF46D15009CD825 /* CGIServerHelper.m */; };
 		1DF06B7A1CF1B95A002E3AEF /* CGIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DF06B791CF1B95A002E3AEF /* CGIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DF06BB11CF1BD50002E3AEF /* CGIContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DF06BAF1CF1BD50002E3AEF /* CGIContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DF06BB21CF1BD50002E3AEF /* CGIContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF06BB01CF1BD50002E3AEF /* CGIContext.m */; };
+		1DF06BB41CF1BD9E002E3AEF /* CGICommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DF06BB31CF1BD99002E3AEF /* CGICommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DF06BB71CF22D70002E3AEF /* CGIListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DF06BB51CF22D70002E3AEF /* CGIListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DF06BB81CF22D70002E3AEF /* CGIListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF06BB61CF22D70002E3AEF /* CGIListener.m */; };
+		1DF06BC01CF235EC002E3AEF /* CGIKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF06BBF1CF235EC002E3AEF /* CGIKitTests.m */; };
+		1DF06BC21CF235EC002E3AEF /* CGIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF06B761CF1B95A002E3AEF /* CGIKit.framework */; };
+		1DF06BC91CF235FF002E3AEF /* CGIKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1DF06B761CF1B95A002E3AEF /* CGIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1D07821B1CFC86C0009ED89D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DF06B6D1CF1B95A002E3AEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DF06B751CF1B95A002E3AEF;
+			remoteInfo = CGIKit;
+		};
+		1D0782201CFC86D9009ED89D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DF06B891CF1BA5A002E3AEF /* CGXServerInterfaces.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DF06B901CF1BAA0002E3AEF;
+			remoteInfo = CGXFastCGI;
+		};
+		1DF06BA41CF1BAFF002E3AEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DF06B891CF1BA5A002E3AEF /* CGXServerInterfaces.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1DF06B911CF1BAA0002E3AEF;
+			remoteInfo = CGXFastCGI;
+		};
+		1DF06BA61CF1BAFF002E3AEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DF06B891CF1BA5A002E3AEF /* CGXServerInterfaces.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1DF06B9B1CF1BABB002E3AEF;
+			remoteInfo = CGXHypertext;
+		};
+		1DF06BC31CF235EC002E3AEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DF06B6D1CF1B95A002E3AEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DF06B751CF1B95A002E3AEF;
+			remoteInfo = CGIKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1D07821D1CFC86C0009ED89D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1D07821A1CFC86C0009ED89D /* CGIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D07821E1CFC86C9009ED89D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1D07821F1CFC86D2009ED89D /* CGXFastCGI.plugin in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DF06BC81CF235F7002E3AEF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1DF06BC91CF235FF002E3AEF /* CGIKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1D0781DB1CF88748009ED89D /* CGISessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGISessionManager.h; sourceTree = "<group>"; };
+		1D0781DC1CF88748009ED89D /* CGISessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGISessionManager.m; sourceTree = "<group>"; };
+		1D0781E71CF94688009ED89D /* CGIKitTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CGIKitTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		1D0781E81CF94689009ED89D /* CGIRequestTestSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGIRequestTestSwift.swift; sourceTree = "<group>"; };
+		1D0781EA1CFC5295009ED89D /* CGICookie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGICookie.h; sourceTree = "<group>"; };
+		1D0781EB1CFC5295009ED89D /* CGICookie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGICookie.m; sourceTree = "<group>"; };
+		1D0782071CFC8693009ED89D /* CGXHello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CGXHello.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D07820D1CFC8693009ED89D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1D0782141CFC8693009ED89D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D0782221CFC8919009ED89D /* CGIAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIAppDelegate.h; sourceTree = "<group>"; };
+		1D0782231CFC8919009ED89D /* CGIAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIAppDelegate.m; sourceTree = "<group>"; };
+		1D71589E1CF46CCC009CD825 /* CGIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIRequest.h; sourceTree = "<group>"; };
+		1D71589F1CF46CCC009CD825 /* CGIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIRequest.m; sourceTree = "<group>"; };
+		1D7158A21CF46D0A009CD825 /* CGIResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIResponse.h; sourceTree = "<group>"; };
+		1D7158A31CF46D0A009CD825 /* CGIResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIResponse.m; sourceTree = "<group>"; };
+		1D7158A61CF46D15009CD825 /* CGIServerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIServerHelper.h; sourceTree = "<group>"; };
+		1D7158A71CF46D15009CD825 /* CGIServerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIServerHelper.m; sourceTree = "<group>"; };
 		1DF06B761CF1B95A002E3AEF /* CGIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CGIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF06B791CF1B95A002E3AEF /* CGIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGIKit.h; sourceTree = "<group>"; };
 		1DF06B7B1CF1B95A002E3AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DF06B891CF1BA5A002E3AEF /* CGXServerInterfaces.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CGXServerInterfaces.xcodeproj; path = CGXServerInterfaces/CGXServerInterfaces.xcodeproj; sourceTree = "<group>"; };
+		1DF06BAF1CF1BD50002E3AEF /* CGIContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIContext.h; sourceTree = "<group>"; };
+		1DF06BB01CF1BD50002E3AEF /* CGIContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIContext.m; sourceTree = "<group>"; };
+		1DF06BB31CF1BD99002E3AEF /* CGICommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGICommon.h; sourceTree = "<group>"; };
+		1DF06BB51CF22D70002E3AEF /* CGIListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIListener.h; sourceTree = "<group>"; };
+		1DF06BB61CF22D70002E3AEF /* CGIListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIListener.m; sourceTree = "<group>"; };
+		1DF06BBD1CF235EC002E3AEF /* CGIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CGIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF06BBF1CF235EC002E3AEF /* CGIKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGIKitTests.m; sourceTree = "<group>"; };
+		1DF06BC11CF235EC002E3AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1D0782041CFC8693009ED89D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D0782191CFC86C0009ED89D /* CGIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1DF06B721CF1B95A002E3AEF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -24,13 +154,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1DF06BBA1CF235EC002E3AEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DF06BC21CF235EC002E3AEF /* CGIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D0782081CFC8693009ED89D /* CGXHello */ = {
+			isa = PBXGroup;
+			children = (
+				1D0782141CFC8693009ED89D /* Info.plist */,
+				1D07820D1CFC8693009ED89D /* main.m */,
+				1D0782221CFC8919009ED89D /* CGIAppDelegate.h */,
+				1D0782231CFC8919009ED89D /* CGIAppDelegate.m */,
+			);
+			path = CGXHello;
+			sourceTree = "<group>";
+		};
 		1DF06B6C1CF1B95A002E3AEF = {
 			isa = PBXGroup;
 			children = (
 				1DF06B781CF1B95A002E3AEF /* CGIKit */,
+				1DF06BBE1CF235EC002E3AEF /* CGIKitTests */,
+				1DF06B811CF1B9BD002E3AEF /* Subprojects */,
+				1D0782081CFC8693009ED89D /* CGXHello */,
 				1DF06B771CF1B95A002E3AEF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				1DF06B761CF1B95A002E3AEF /* CGIKit.framework */,
+				1DF06BBD1CF235EC002E3AEF /* CGIKitTests.xctest */,
+				1D0782071CFC8693009ED89D /* CGXHello.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -47,9 +201,52 @@
 			isa = PBXGroup;
 			children = (
 				1DF06B791CF1B95A002E3AEF /* CGIKit.h */,
+				1DF06BB31CF1BD99002E3AEF /* CGICommon.h */,
+				1DF06BB51CF22D70002E3AEF /* CGIListener.h */,
+				1DF06BB61CF22D70002E3AEF /* CGIListener.m */,
+				1DF06BAF1CF1BD50002E3AEF /* CGIContext.h */,
+				1DF06BB01CF1BD50002E3AEF /* CGIContext.m */,
+				1D71589E1CF46CCC009CD825 /* CGIRequest.h */,
+				1D71589F1CF46CCC009CD825 /* CGIRequest.m */,
+				1D7158A21CF46D0A009CD825 /* CGIResponse.h */,
+				1D7158A31CF46D0A009CD825 /* CGIResponse.m */,
+				1D0781EA1CFC5295009ED89D /* CGICookie.h */,
+				1D0781EB1CFC5295009ED89D /* CGICookie.m */,
+				1D7158A61CF46D15009CD825 /* CGIServerHelper.h */,
+				1D7158A71CF46D15009CD825 /* CGIServerHelper.m */,
+				1D0781DB1CF88748009ED89D /* CGISessionManager.h */,
+				1D0781DC1CF88748009ED89D /* CGISessionManager.m */,
 				1DF06B7B1CF1B95A002E3AEF /* Info.plist */,
 			);
 			path = CGIKit;
+			sourceTree = "<group>";
+		};
+		1DF06B811CF1B9BD002E3AEF /* Subprojects */ = {
+			isa = PBXGroup;
+			children = (
+				1DF06B891CF1BA5A002E3AEF /* CGXServerInterfaces.xcodeproj */,
+			);
+			path = Subprojects;
+			sourceTree = "<group>";
+		};
+		1DF06B8A1CF1BA5A002E3AEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DF06BA51CF1BAFF002E3AEF /* CGXFastCGI.plugin */,
+				1DF06BA71CF1BAFF002E3AEF /* CGXHypertext.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DF06BBE1CF235EC002E3AEF /* CGIKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				1DF06BBF1CF235EC002E3AEF /* CGIKitTests.m */,
+				1D0781E81CF94689009ED89D /* CGIRequestTestSwift.swift */,
+				1DF06BC11CF235EC002E3AEF /* Info.plist */,
+				1D0781E71CF94688009ED89D /* CGIKitTests-Bridging-Header.h */,
+			);
+			path = CGIKitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,13 +256,42 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DF06BB71CF22D70002E3AEF /* CGIListener.h in Headers */,
+				1D7158A81CF46D15009CD825 /* CGIServerHelper.h in Headers */,
+				1DF06BB41CF1BD9E002E3AEF /* CGICommon.h in Headers */,
+				1D0781DD1CF88748009ED89D /* CGISessionManager.h in Headers */,
+				1D7158A01CF46CCC009CD825 /* CGIRequest.h in Headers */,
+				1DF06BB11CF1BD50002E3AEF /* CGIContext.h in Headers */,
+				1D0781EC1CFC5295009ED89D /* CGICookie.h in Headers */,
 				1DF06B7A1CF1B95A002E3AEF /* CGIKit.h in Headers */,
+				1D7158A41CF46D0A009CD825 /* CGIResponse.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1D0782061CFC8693009ED89D /* CGXHello */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D0782151CFC8693009ED89D /* Build configuration list for PBXNativeTarget "CGXHello" */;
+			buildPhases = (
+				1D0782031CFC8693009ED89D /* Sources */,
+				1D0782041CFC8693009ED89D /* Frameworks */,
+				1D0782051CFC8693009ED89D /* Resources */,
+				1D07821D1CFC86C0009ED89D /* Embed Frameworks */,
+				1D07821E1CFC86C9009ED89D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D0782211CFC86D9009ED89D /* PBXTargetDependency */,
+				1D07821C1CFC86C0009ED89D /* PBXTargetDependency */,
+			);
+			name = CGXHello;
+			productName = CGXHello;
+			productReference = 1D0782071CFC8693009ED89D /* CGXHello.app */;
+			productType = "com.apple.product-type.application";
+		};
 		1DF06B751CF1B95A002E3AEF /* CGIKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DF06B7E1CF1B95A002E3AEF /* Build configuration list for PBXNativeTarget "CGIKit" */;
@@ -84,16 +310,42 @@
 			productReference = 1DF06B761CF1B95A002E3AEF /* CGIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		1DF06BBC1CF235EC002E3AEF /* CGIKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DF06BC51CF235EC002E3AEF /* Build configuration list for PBXNativeTarget "CGIKitTests" */;
+			buildPhases = (
+				1DF06BB91CF235EC002E3AEF /* Sources */,
+				1DF06BBA1CF235EC002E3AEF /* Frameworks */,
+				1DF06BBB1CF235EC002E3AEF /* Resources */,
+				1DF06BC81CF235F7002E3AEF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DF06BC41CF235EC002E3AEF /* PBXTargetDependency */,
+			);
+			name = CGIKitTests;
+			productName = CGIKitTests;
+			productReference = 1DF06BBD1CF235EC002E3AEF /* CGIKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		1DF06B6D1CF1B95A002E3AEF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CGI;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = DreamCity;
 				TargetAttributes = {
+					1D0782061CFC8693009ED89D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					1DF06B751CF1B95A002E3AEF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					1DF06BBC1CF235EC002E3AEF = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -104,19 +356,59 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 1DF06B6C1CF1B95A002E3AEF;
 			productRefGroup = 1DF06B771CF1B95A002E3AEF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1DF06B8A1CF1BA5A002E3AEF /* Products */;
+					ProjectRef = 1DF06B891CF1BA5A002E3AEF /* CGXServerInterfaces.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1DF06B751CF1B95A002E3AEF /* CGIKit */,
+				1DF06BBC1CF235EC002E3AEF /* CGIKitTests */,
+				1D0782061CFC8693009ED89D /* CGXHello */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		1DF06BA51CF1BAFF002E3AEF /* CGXFastCGI.plugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CGXFastCGI.plugin;
+			remoteRef = 1DF06BA41CF1BAFF002E3AEF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1DF06BA71CF1BAFF002E3AEF /* CGXHypertext.plugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CGXHypertext.plugin;
+			remoteRef = 1DF06BA61CF1BAFF002E3AEF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
+		1D0782051CFC8693009ED89D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1DF06B741CF1B95A002E3AEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DF06BBB1CF235EC002E3AEF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -126,16 +418,83 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1D0782031CFC8693009ED89D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D0782241CFC8919009ED89D /* CGIAppDelegate.m in Sources */,
+				1D07820E1CFC8693009ED89D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1DF06B711CF1B95A002E3AEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D7158A91CF46D15009CD825 /* CGIServerHelper.m in Sources */,
+				1DF06BB21CF1BD50002E3AEF /* CGIContext.m in Sources */,
+				1D7158A11CF46CCC009CD825 /* CGIRequest.m in Sources */,
+				1D0781ED1CFC5295009ED89D /* CGICookie.m in Sources */,
+				1D7158A51CF46D0A009CD825 /* CGIResponse.m in Sources */,
+				1D0781DE1CF88748009ED89D /* CGISessionManager.m in Sources */,
+				1DF06BB81CF22D70002E3AEF /* CGIListener.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DF06BB91CF235EC002E3AEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DF06BC01CF235EC002E3AEF /* CGIKitTests.m in Sources */,
+				1D0781E91CF94689009ED89D /* CGIRequestTestSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1D07821C1CFC86C0009ED89D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DF06B751CF1B95A002E3AEF /* CGIKit */;
+			targetProxy = 1D07821B1CFC86C0009ED89D /* PBXContainerItemProxy */;
+		};
+		1D0782211CFC86D9009ED89D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CGXFastCGI;
+			targetProxy = 1D0782201CFC86D9009ED89D /* PBXContainerItemProxy */;
+		};
+		1DF06BC41CF235EC002E3AEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DF06B751CF1B95A002E3AEF /* CGIKit */;
+			targetProxy = 1DF06BC31CF235EC002E3AEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1D0782161CFC8693009ED89D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CGXHello/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = info.maxchan.CGXHello;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1D0782171CFC8693009ED89D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CGXHello/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = info.maxchan.CGXHello;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		1DF06B7C1CF1B95A002E3AEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -259,9 +618,44 @@
 			};
 			name = Release;
 		};
+		1DF06BC61CF235EC002E3AEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CGIKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = info.maxchan.CGIKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CGIKitTests/CGIKitTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1DF06BC71CF235EC002E3AEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CGIKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = info.maxchan.CGIKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CGIKitTests/CGIKitTests-Bridging-Header.h";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1D0782151CFC8693009ED89D /* Build configuration list for PBXNativeTarget "CGXHello" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D0782161CFC8693009ED89D /* Debug */,
+				1D0782171CFC8693009ED89D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1DF06B701CF1B95A002E3AEF /* Build configuration list for PBXProject "CGIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -278,6 +672,16 @@
 				1DF06B801CF1B95A002E3AEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DF06BC51CF235EC002E3AEF /* Build configuration list for PBXNativeTarget "CGIKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DF06BC61CF235EC002E3AEF /* Debug */,
+				1DF06BC71CF235EC002E3AEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
