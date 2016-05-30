@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1DF06BBC1CF235EC002E3AEF"
+               BuildableName = "CGIKitTests.xctest"
+               BlueprintName = "CGIKitTests"
+               ReferencedContainer = "container:CGIKit.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1DF06B751CF1B95A002E3AEF"
+            BuildableName = "CGIKit.framework"
+            BlueprintName = "CGIKit"
+            ReferencedContainer = "container:CGIKit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

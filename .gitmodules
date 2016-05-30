@@ -1,0 +1,3 @@
+[submodule "Subprojects/CGXServerInterfaces/CGXFastCGI/fastcgi"]
+	path = Subprojects/CGXServerInterfaces/CGXFastCGI/fastcgi
+	url = git@github.com:xcvista/libfastcgi.git
