@@ -18,6 +18,7 @@
 		1D07821F1CFC86D2009ED89D /* CGXFastCGI.plugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1DF06BA51CF1BAFF002E3AEF /* CGXFastCGI.plugin */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1D0782241CFC8919009ED89D /* CGIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0782231CFC8919009ED89D /* CGIAppDelegate.m */; };
 		1D07822A1CFC97F3009ED89D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1D0782291CFC97F3009ED89D /* README.md */; };
+		1D07822C1CFC9970009ED89D /* LICENSE.md in Sources */ = {isa = PBXBuildFile; fileRef = 1D07822B1CFC9970009ED89D /* LICENSE.md */; };
 		1D7158A01CF46CCC009CD825 /* CGIRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D71589E1CF46CCC009CD825 /* CGIRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D7158A11CF46CCC009CD825 /* CGIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D71589F1CF46CCC009CD825 /* CGIRequest.m */; };
 		1D7158A41CF46D0A009CD825 /* CGIResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D7158A21CF46D0A009CD825 /* CGIResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -121,6 +122,7 @@
 		1D0782231CFC8919009ED89D /* CGIAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIAppDelegate.m; sourceTree = "<group>"; };
 		1D0782281CFC9758009ED89D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		1D0782291CFC97F3009ED89D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1D07822B1CFC9970009ED89D /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		1D71589E1CF46CCC009CD825 /* CGIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIRequest.h; sourceTree = "<group>"; };
 		1D71589F1CF46CCC009CD825 /* CGIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIRequest.m; sourceTree = "<group>"; };
 		1D7158A21CF46D0A009CD825 /* CGIResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIResponse.h; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 			children = (
 				1D0782281CFC9758009ED89D /* .gitignore */,
 				1D0782291CFC97F3009ED89D /* README.md */,
+				1D07822B1CFC9970009ED89D /* LICENSE.md */,
 				1DF06B781CF1B95A002E3AEF /* CGIKit */,
 				1DF06BBE1CF235EC002E3AEF /* CGIKitTests */,
 				1DF06B811CF1B9BD002E3AEF /* Subprojects */,
@@ -427,6 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D07822C1CFC9970009ED89D /* LICENSE.md in Sources */,
 				1D07822A1CFC97F3009ED89D /* README.md in Sources */,
 				1D0782241CFC8919009ED89D /* CGIAppDelegate.m in Sources */,
 				1D07820E1CFC8693009ED89D /* main.m in Sources */,
