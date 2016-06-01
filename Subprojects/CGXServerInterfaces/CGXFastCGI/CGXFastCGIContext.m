@@ -10,6 +10,8 @@
 #import "fastcgi/fcgiapp.h"
 #import "NSError+CGXFastCGIErrors.h"
 #import "CGXFastCGIInputStream.h"
+#import "CGXFastCGIResponse.h"
+#import "CGXFastCGIOutputStream.h"
 
 @implementation CGXFastCGIContext
 {
@@ -53,15 +55,23 @@
         }
     }
     NSInputStream *requestStream = [[CGXFastCGIInputStream alloc] initWithFCGXStream:_req.in];
+    
     _request = [[CGIRequest alloc] initWithContext:self
                                     CGIEnvironment:envp
                                        inputStream:requestStream];
+    _response = [[CGXFastCGIResponse alloc] initWithContext:self
+                                                 FCGXStream:_req.out];
+    _server = [[CGIServerHelper alloc] initWithContext:self
+                                          documentRoot:[NSURL fileURLWithPath:envp[CGIEnvironmentDocumentRoot]]
+                                           errorStream:[[CGXFastCGIOutputStream alloc] initWithFCGXStream:_req.err]];
     
     return YES;
 }
 
 - (void)dealloc
 {
+    [_response send];
+    FCGX_FFlush(_req.out);
     FCGX_Finish_r(&_req);
     FCGX_Free(&_req, YES);
 }

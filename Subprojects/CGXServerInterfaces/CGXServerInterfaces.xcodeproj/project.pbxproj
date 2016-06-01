@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D040AE61CFEC70C003DDCF2 /* CGXFastCGIOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D040AE51CFEC70C003DDCF2 /* CGXFastCGIOutputStream.m */; };
 		1D0781E31CF8BB58009ED89D /* CGXFastCGIContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0781E21CF8BB58009ED89D /* CGXFastCGIContext.m */; };
 		1D0781E61CF8BD0C009ED89D /* NSError+CGXFastCGIErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0781E51CF8BD0C009ED89D /* NSError+CGXFastCGIErrors.m */; };
 		1D0782271CFC9038009ED89D /* CGXFastCGIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0782261CFC9038009ED89D /* CGXFastCGIInputStream.m */; };
+		1D07822F1CFC9AA4009ED89D /* CGXFastCGIResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D07822E1CFC9AA4009ED89D /* CGXFastCGIResponse.m */; };
 		1DF06BD51CF29614002E3AEF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1DF06BCB1CF29614002E3AEF /* .gitignore */; };
 		1DF06BD61CF29614002E3AEF /* fcgiapp.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DF06BCE1CF29614002E3AEF /* fcgiapp.c */; settings = {COMPILER_FLAGS = "-Wno-shorten-64-to-32 -Wno-unused-const-variable"; }; };
 		1DF06BD81CF29614002E3AEF /* os_unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DF06BD31CF29614002E3AEF /* os_unix.c */; settings = {COMPILER_FLAGS = "-Wno-shorten-64-to-32 -Wno-unused-const-variable -Wno-pointer-sign"; }; };
@@ -17,12 +19,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D040AE41CFEC70C003DDCF2 /* CGXFastCGIOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGXFastCGIOutputStream.h; sourceTree = "<group>"; };
+		1D040AE51CFEC70C003DDCF2 /* CGXFastCGIOutputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGXFastCGIOutputStream.m; sourceTree = "<group>"; };
 		1D0781E11CF8BB58009ED89D /* CGXFastCGIContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGXFastCGIContext.h; sourceTree = "<group>"; };
 		1D0781E21CF8BB58009ED89D /* CGXFastCGIContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGXFastCGIContext.m; sourceTree = "<group>"; };
 		1D0781E41CF8BD0C009ED89D /* NSError+CGXFastCGIErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+CGXFastCGIErrors.h"; sourceTree = "<group>"; };
 		1D0781E51CF8BD0C009ED89D /* NSError+CGXFastCGIErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+CGXFastCGIErrors.m"; sourceTree = "<group>"; };
 		1D0782251CFC9038009ED89D /* CGXFastCGIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGXFastCGIInputStream.h; sourceTree = "<group>"; };
 		1D0782261CFC9038009ED89D /* CGXFastCGIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGXFastCGIInputStream.m; sourceTree = "<group>"; };
+		1D07822D1CFC9AA4009ED89D /* CGXFastCGIResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGXFastCGIResponse.h; sourceTree = "<group>"; };
+		1D07822E1CFC9AA4009ED89D /* CGXFastCGIResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGXFastCGIResponse.m; sourceTree = "<group>"; };
 		1DF06B911CF1BAA0002E3AEF /* CGXFastCGI.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CGXFastCGI.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF06B931CF1BAA0002E3AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DF06B9B1CF1BABB002E3AEF /* CGXHypertext.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CGXHypertext.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +95,10 @@
 				1D0781E21CF8BB58009ED89D /* CGXFastCGIContext.m */,
 				1D0782251CFC9038009ED89D /* CGXFastCGIInputStream.h */,
 				1D0782261CFC9038009ED89D /* CGXFastCGIInputStream.m */,
+				1D040AE41CFEC70C003DDCF2 /* CGXFastCGIOutputStream.h */,
+				1D040AE51CFEC70C003DDCF2 /* CGXFastCGIOutputStream.m */,
+				1D07822D1CFC9AA4009ED89D /* CGXFastCGIResponse.h */,
+				1D07822E1CFC9AA4009ED89D /* CGXFastCGIResponse.m */,
 				1DF06B931CF1BAA0002E3AEF /* Info.plist */,
 			);
 			path = CGXFastCGI;
@@ -214,8 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D07822F1CFC9AA4009ED89D /* CGXFastCGIResponse.m in Sources */,
 				1DF06BDC1CF2997C002E3AEF /* CGXFastCGIListener.m in Sources */,
 				1DF06BD81CF29614002E3AEF /* os_unix.c in Sources */,
+				1D040AE61CFEC70C003DDCF2 /* CGXFastCGIOutputStream.m in Sources */,
 				1D0781E31CF8BB58009ED89D /* CGXFastCGIContext.m in Sources */,
 				1DF06BD61CF29614002E3AEF /* fcgiapp.c in Sources */,
 				1D0781E61CF8BD0C009ED89D /* NSError+CGXFastCGIErrors.m in Sources */,

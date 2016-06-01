@@ -8,9 +8,17 @@
 
 #import <CGIKit/CGICommon.h>
 
-@class CGIListener, CGIRequest, CGIResponse, CGIServerHelper, CGISession;
+@class CGIListener, CGIRequest, CGIResponse, CGIServerHelper;
 
 NS_ASSUME_NONNULL_BEGIN
+
+@class CGIContext;
+
+@protocol CGIContextHandler <NSObject>
+
+- (void)handleContext:(CGIContext *)context;
+
+@end
 
 @interface CGIContext : NSObject
 {
@@ -19,13 +27,14 @@ NS_ASSUME_NONNULL_BEGIN
     CGIRequest *_request;
     CGIResponse *_response;
     CGIServerHelper *_server;
+    __nullable id _session;
 }
 
 @property (readonly, weak) CGIListener *listener;
 @property (readonly) CGIRequest *request;
 @property (readonly) CGIResponse *response;
 @property (readonly) CGIServerHelper *server;
-@property (readonly) CGISession *session;
+@property (nullable) id session;
 
 @end
 

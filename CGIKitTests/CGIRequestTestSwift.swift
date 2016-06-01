@@ -24,11 +24,7 @@ class CGIRequestTestSwift: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let data = NSData.init();
-        let request = CGIRequest.init(requestLine: "GET / HTTP/1.0", headerFields: [:], inputStream: NSInputStream.init(data: data))
-        XCTAssert(request.method == "GET")
-        XCTAssert(request.requestURI == "/")
-        XCTAssert(request.protocolVersion == "HTTP/1.0")
+        var dict = [:]
     }
 
 }

@@ -245,10 +245,10 @@ static inline NSDictionary<NSString *, NSArray<NSString *> *> *__attribute__((al
                         _form = @{};
                     }
                 }
-                else if ([self.headers[CGIHTTPHeaderContentType] isEqualToString:@"multipart/form-data"])
+                /*else if ([self.headers[CGIHTTPHeaderContentType] isEqualToString:@"multipart/form-data"])
                 {
-                    // Use the multipart parser system.
-                }
+                    // Use the multipart parser system. It will be added later with anew files property.
+                }*/
                 else
                 {
                     _form = @{};

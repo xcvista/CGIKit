@@ -7,7 +7,9 @@
 //
 
 #import "CGIResponse.h"
+
 #import "CGICookie.h"
+#import "CGXErrorHandler.h"
 
 #import <pthread.h>
 
@@ -154,7 +156,6 @@ NSString *const _CGXHTTPDefaultProtocol = @"HTTP/1.0";
 @implementation CGIResponse
 
 @synthesize context = _context;
-@synthesize statusCode = _statusCode;
 @synthesize outputStream = _outputStream;
 @synthesize status = _status;
 
@@ -171,6 +172,23 @@ NSString *const _CGXHTTPDefaultProtocol = @"HTTP/1.0";
     @synchronized (self)
     {
         _statusLine = statusLine ?: CGIStringForStatusCode(self.statusCode);
+    }
+}
+
+- (CGIHTTPStatusCode)statusCode
+{
+    @synchronized (self)
+    {
+        return _statusCode;
+    }
+}
+
+- (void)setStatusCode:(CGIHTTPStatusCode)statusCode
+{
+    @synchronized (self)
+    {
+        _statusCode = statusCode;
+        _statusLine = CGIStringForStatusCode(self.statusCode);
     }
 }
 
@@ -234,6 +252,7 @@ NSString *const _CGXHTTPDefaultProtocol = @"HTTP/1.0";
         _protocolVersion = _CGXHTTPDefaultProtocol;
         _headers = [NSMutableDictionary dictionary];
         _cookies = [NSMutableArray array];
+        _outputStream = outputStream;
         
         [self setHeaderField:CGIHTTPHeaderContentType withValue:@"text/html"];
         
@@ -320,6 +339,22 @@ NSString *const _CGXHTTPDefaultProtocol = @"HTTP/1.0";
     }
 }
 
+CGXErrorHandler *_CGXErrorHandler;
+pthread_once_t _CGXErrorToken = PTHREAD_ONCE_INIT;
+
+void _CGXErrorHandlerInit(void)
+{
+    _CGXErrorHandler = [[CGXErrorHandler alloc] init];
+}
+
+- (void)error:(NSError *)error
+{
+    pthread_once(&_CGXErrorToken, _CGXErrorHandlerInit);
+    
+    objc_setAssociatedObject(_context, (__bridge const void *)([NSError class]), error, OBJC_ASSOCIATION_RETAIN);
+    [_CGXErrorHandler handleContext:_context];
+}
+
 - (void)sendHeaders
 {
     [self doesNotRecognizeSelector:_cmd];
@@ -328,6 +363,29 @@ NSString *const _CGXHTTPDefaultProtocol = @"HTTP/1.0";
 - (void)send
 {
     [self doesNotRecognizeSelector:_cmd];
+}
+
+@end
+
+@implementation NSOutputStream (CGIOutputStream)
+
+- (BOOL)writeString:(NSString *)string usingEncoding:(NSStringEncoding)encoding withError:(NSError * _Nullable __autoreleasing *)error
+{
+    return [self writeData:[string dataUsingEncoding:encoding]
+                 withError:error];
+}
+
+- (BOOL)writeData:(NSData *)data withError:(NSError * _Nullable __autoreleasing *)error
+{
+    NSInteger rv = [self write:data.bytes maxLength:data.length];
+    if (rv < 0)
+    {
+        POINTER_ASSIGN(error, [NSError errorWithDomain:NSPOSIXErrorDomain
+                                                  code:errno
+                                              userInfo:nil]);
+        return NO;
+    }
+    return YES;
 }
 
 @end

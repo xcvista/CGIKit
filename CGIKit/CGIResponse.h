@@ -195,8 +195,17 @@ typedef NS_ENUM(NSUInteger, CGIResponseStatus)
 - (void)removeCookie:(CGICookie *)cookie;
 - (void)removeAllCookiesWithKey:(NSString *)key;
 
+- (void)error:(NSError *)error;
+
 - (void)sendHeaders;
 - (void)send;
+
+@end
+
+@interface NSOutputStream (CGIOutputStream)
+
+- (BOOL)writeString:(NSString *)string usingEncoding:(NSStringEncoding)encoding withError:(NSError **)error;
+- (BOOL)writeData:(NSData *)data withError:(NSError **)error;
 
 @end
 

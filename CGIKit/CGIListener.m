@@ -8,6 +8,10 @@
 
 #import "CGIListener.h"
 
+#import "CGXErrorPageResourceHandler.h"
+#import "CGXUnhandledRequestHandler.h"
+#import "CGXExceptionHandler.h"
+
 NSString *const CGIFastCGIServerProtocol = @"CGIFastCGIServerProtocol";
 NSString *const CGIHypertexrtServerProtocol = @"CGIHypertexrtServerProtocol";
 NSString *const CGIApacheModuleServerProtocol = @"CGIApacheModuleServerProtocol";
@@ -16,6 +20,8 @@ NSString *const CGIDefaultListenerTypeKey = @"CGIDefaultListenerTypeKey";
 NSString *const CGIDefaultListenerAddressKey = @"CGIDefaultListenerAddressKey";
 
 NSString *const _CGXListenerThreadName = @"info.maxchan.CGIKit.listener";
+
+NSString *const CGISpecialPathMarker = @"/.CGIKit/";
 
 static NSMutableDictionary<NSString *, NSBundle *> *_CGXLoadedPlugins;
 
@@ -127,6 +133,46 @@ static NSMutableDictionary<NSString *, NSBundle *> *_CGXLoadedPlugins;
 + (instancetype)listener
 {
     return [self listenerWithAddress:[NSBundle mainBundle].infoDictionary[CGIDefaultListenerAddressKey]];
+}
+
+NSMutableDictionary<NSString *, id<CGIContextHandler>> *_CGXSpecialPathHandlers;
+
++ (void)addHandler:(id<CGIContextHandler>)handler forSpecialPath:(NSString *)path
+{
+    if (!_CGXSpecialPathHandlers)
+    {
+        @synchronized (self)
+        {
+            if (!_CGXSpecialPathHandlers)
+            {
+                _CGXSpecialPathHandlers = [NSMutableDictionary dictionary];
+            }
+        }
+    }
+    
+    _CGXSpecialPathHandlers[path] = handler;
+}
+
++ (id<CGIContextHandler>)handlerForSpecialPath:(NSString *)path
+{
+    return _CGXSpecialPathHandlers[path];
+}
+
++ (void)removeHandlerForSpecialPath:(NSString *)path
+{
+    [_CGXSpecialPathHandlers removeObjectForKey:path];
+}
+
+CGXExceptionHandler *_CGXExceptionHandler;
+
++ (void)initialize
+{
+    if (self == [CGIListener class])
+    {
+        [self addHandler:[[CGXUnhandledRequestHandler alloc] init] forSpecialPath:CGISpecialPathMarker];
+        [self addHandler:[[CGXErrorPageResourceHandler alloc] init] forSpecialPath:@"CGIKit"];
+        _CGXExceptionHandler = [[CGXExceptionHandler alloc] init];
+    }
 }
 
 - (instancetype)init
@@ -251,8 +297,44 @@ static NSMutableDictionary<NSString *, NSBundle *> *_CGXLoadedPlugins;
         [_syncLock unlock];
     }
     
-    if ([self.delegate respondsToSelector:@selector(listener:didAcceptContext:)])
-        [self.delegate listener:self didAcceptContext:context];
+    @try
+    {
+        if ([self.delegate respondsToSelector:@selector(listener:didAcceptContext:)])
+            [self.delegate listener:self didAcceptContext:context];
+        
+        NSRange marker = [context.request.requestURI rangeOfString:CGISpecialPathMarker options:NSBackwardsSearch];
+        if (marker.location != NSNotFound)
+        {
+            NSString *path = [context.request.requestURI substringFromIndex:NSMaxRange(marker)];
+            NSString *directory = path.pathComponents.firstObject;
+            id<CGIContextHandler> handler = [[self class] handlerForSpecialPath:directory];
+            if (handler)
+            {
+                objc_setAssociatedObject(context, @selector(handleContext:), path, OBJC_ASSOCIATION_RETAIN);
+                [handler handleContext:context];
+            }
+            else
+                marker.location = NSNotFound;
+        }
+        
+        if (marker.location == NSNotFound)
+        {
+            id<CGIContextHandler> handler = [self handlerForContext:context];
+            if (handler)
+                [handler handleContext:context];
+            else
+                [self handleContext:context];
+        }
+    }
+    @catch (NSException *exception)
+    {
+        objc_setAssociatedObject(context, (__bridge const void *)([NSException class]), exception, OBJC_ASSOCIATION_RETAIN);
+        [_CGXExceptionHandler handleContext:context];
+    }
+    @finally
+    {
+        [context.response send];
+    }
 }
 
 - (void)didEncounterError:(NSError *)error
@@ -274,6 +356,29 @@ static NSMutableDictionary<NSString *, NSBundle *> *_CGXLoadedPlugins;
     
     if ([self.delegate respondsToSelector:@selector(listener:didEncounterError:)])
         [self.delegate listener:self didEncounterError:error];
+}
+
+@end
+
+@implementation CGIListener (CGIListenerDelegate)
+
+- (id<CGIContextHandler>)handlerForContext:(CGIContext *)context
+{
+    if ([self.delegate respondsToSelector:@selector(listener:handlerForContext:)])
+        return [self.delegate listener:self handlerForContext:context];
+    else
+        return nil;
+}
+
+- (void)handleContext:(CGIContext *)context
+{
+    if ([self.delegate respondsToSelector:@selector(listener:handleContext:)])
+        [self.delegate listener:self handleContext:context];
+    else
+    {
+        id<CGIContextHandler> handler = [[self class] handlerForSpecialPath:CGISpecialPathMarker];
+        [handler handleContext:context];
+    }
 }
 
 @end

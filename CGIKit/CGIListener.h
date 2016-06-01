@@ -10,6 +10,7 @@
 
 @class CGIContext;
 @class CGIListener;
+@protocol CGIContextHandler;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -20,11 +21,15 @@ FOUNDATION_EXPORT NSString *const CGIApacheModuleServerProtocol;
 FOUNDATION_EXPORT NSString *const CGIDefaultListenerTypeKey;
 FOUNDATION_EXPORT NSString *const CGIDefaultListenerAddressKey;
 
+FOUNDATION_EXPORT NSString *const CGISpecialPathMarker;
+
 @protocol CGIListenerDelegate <NSObject>
 
 @optional
 - (void)listener:(CGIListener *)listener didAcceptContext:(CGIContext *)context;
 - (void)listener:(CGIListener *)listener didEncounterError:(NSError *)error;
+- (nullable id<CGIContextHandler>)listener:(CGIListener *)listener handlerForContext:(CGIContext *)context;
+- (void)listener:(CGIListener *)listener handleContext:(CGIContext *)context;
 
 @end
 
@@ -38,7 +43,12 @@ FOUNDATION_EXPORT NSString *const CGIDefaultListenerAddressKey;
 + (instancetype)listenerWithType:(NSString *)type listeningAddress:(nullable NSString *)address;
 + (instancetype)listenerWithAddress:(nullable NSString *)address;
 + (instancetype)listener;
+
 + (NSString *)listenerType;
+
++ (void)addHandler:(id<CGIContextHandler>)handler forSpecialPath:(NSString *)path;
++ (void)removeHandlerForSpecialPath:(NSString *)path;
++ (nullable id<CGIContextHandler>)handlerForSpecialPath:(NSString *)path;
 
 - (instancetype)init;
 - (instancetype)initWithType:(NSString *)type;
@@ -51,6 +61,13 @@ FOUNDATION_EXPORT NSString *const CGIDefaultListenerAddressKey;
 
 - (void)didAcceptContext:(CGIContext *)context;
 - (void)didEncounterError:(NSError *)error;
+
+@end
+
+@interface CGIListener (CGIListenerDelegate)
+
+- (nullable id<CGIContextHandler>)handlerForContext:(CGIContext *)context;
+- (void)handleContext:(CGIContext *)context;
 
 @end
 

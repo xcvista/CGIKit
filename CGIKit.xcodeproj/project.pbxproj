@@ -7,8 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D0781DD1CF88748009ED89D /* CGISessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D0781DB1CF88748009ED89D /* CGISessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D0781DE1CF88748009ED89D /* CGISessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0781DC1CF88748009ED89D /* CGISessionManager.m */; };
+		1D040B341CFEFD4A003DDCF2 /* jquery.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AE91CFEFCF6003DDCF2 /* jquery.js */; };
+		1D040B351CFEFD4A003DDCF2 /* microcms.css in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AEA1CFEFCF6003DDCF2 /* microcms.css */; };
+		1D040B361CFEFD4A003DDCF2 /* navbar.css in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AEB1CFEFCF6003DDCF2 /* navbar.css */; };
+		1D040B371CFEFD4A003DDCF2 /* sf-ui-text-light-webfont.eot in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AED1CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.eot */; };
+		1D040B381CFEFD4A003DDCF2 /* sf-ui-text-light-webfont.svg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AEE1CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.svg */; };
+		1D040B391CFEFD4A003DDCF2 /* sf-ui-text-light-webfont.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AEF1CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.ttf */; };
+		1D040B3A1CFEFD4A003DDCF2 /* sf-ui-text-light-webfont.woff in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AF01CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.woff */; };
+		1D040B3B1CFEFD4A003DDCF2 /* sf-ui-text-light-webfont.woff2 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AF11CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.woff2 */; };
+		1D040B3C1CFEFD4A003DDCF2 /* sf-ui-text-lightitalic-webfont.eot in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AF21CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.eot */; };
+		1D040B3D1CFEFD4A003DDCF2 /* sf-ui-text-lightitalic-webfont.svg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AF31CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.svg */; };
+		1D040B3E1CFEFD4A003DDCF2 /* sf-ui-text-lightitalic-webfont.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AF41CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.ttf */; };
+		1D040B3F1CFEFD4A003DDCF2 /* sf-ui-text-lightitalic-webfont.woff in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AF51CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.woff */; };
+		1D040B401CFEFD4A003DDCF2 /* sf-ui-text-lightitalic-webfont.woff2 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AF61CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.woff2 */; };
+		1D040B411CFEFD4A003DDCF2 /* sf-ui-text-medium-webfont.eot in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AF71CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.eot */; };
+		1D040B421CFEFD4A003DDCF2 /* sf-ui-text-medium-webfont.svg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AF81CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.svg */; };
+		1D040B431CFEFD4A003DDCF2 /* sf-ui-text-medium-webfont.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AF91CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.ttf */; };
+		1D040B441CFEFD4A003DDCF2 /* sf-ui-text-medium-webfont.woff in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AFA1CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.woff */; };
+		1D040B451CFEFD4A003DDCF2 /* sf-ui-text-medium-webfont.woff2 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AFB1CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.woff2 */; };
+		1D040B461CFEFD4A003DDCF2 /* sf-ui-text-mediumitalic-webfont.eot in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AFC1CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.eot */; };
+		1D040B471CFEFD4A003DDCF2 /* sf-ui-text-mediumitalic-webfont.svg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AFD1CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.svg */; };
+		1D040B481CFEFD4A003DDCF2 /* sf-ui-text-mediumitalic-webfont.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AFE1CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.ttf */; };
+		1D040B491CFEFD4A003DDCF2 /* sf-ui-text-mediumitalic-webfont.woff in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AFF1CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.woff */; };
+		1D040B4A1CFEFD4A003DDCF2 /* sf-ui-text-mediumitalic-webfont.woff2 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B001CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.woff2 */; };
+		1D040B4B1CFEFD4A003DDCF2 /* sf-ui.css in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B011CFEFCF6003DDCF2 /* sf-ui.css */; };
+		1D040B4C1CFEFD4A003DDCF2 /* source-code-pro.css in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B021CFEFCF6003DDCF2 /* source-code-pro.css */; };
+		1D040B4D1CFEFD4A003DDCF2 /* sourcecodepro-light-webfont.eot in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B031CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.eot */; };
+		1D040B4E1CFEFD4A003DDCF2 /* sourcecodepro-light-webfont.svg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B041CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.svg */; };
+		1D040B4F1CFEFD4A003DDCF2 /* sourcecodepro-light-webfont.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B051CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.ttf */; };
+		1D040B501CFEFD4A003DDCF2 /* sourcecodepro-light-webfont.woff in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B061CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.woff */; };
+		1D040B511CFEFD4A003DDCF2 /* sourcecodepro-light-webfont.woff2 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B071CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.woff2 */; };
+		1D040B521CFEFD4A003DDCF2 /* sourcecodepro-medium-webfont.eot in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B081CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.eot */; };
+		1D040B531CFEFD4A003DDCF2 /* sourcecodepro-medium-webfont.svg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B091CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.svg */; };
+		1D040B541CFEFD4A003DDCF2 /* sourcecodepro-medium-webfont.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B0A1CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.ttf */; };
+		1D040B551CFEFD4A003DDCF2 /* sourcecodepro-medium-webfont.woff in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B0B1CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.woff */; };
+		1D040B561CFEFD4A003DDCF2 /* sourcecodepro-medium-webfont.woff2 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B0C1CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.woff2 */; };
+		1D040B591CFF0339003DDCF2 /* CGXErrorPageResourceHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D040B571CFF0339003DDCF2 /* CGXErrorPageResourceHandler.h */; };
+		1D040B5A1CFF0339003DDCF2 /* CGXErrorPageResourceHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D040B581CFF0339003DDCF2 /* CGXErrorPageResourceHandler.m */; };
+		1D040B5D1CFF0516003DDCF2 /* CGXUnhandledRequestHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D040B5B1CFF0516003DDCF2 /* CGXUnhandledRequestHandler.h */; };
+		1D040B5E1CFF0516003DDCF2 /* CGXUnhandledRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D040B5C1CFF0516003DDCF2 /* CGXUnhandledRequestHandler.m */; };
+		1D040B611CFF0709003DDCF2 /* CGXExceptionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D040B5F1CFF0709003DDCF2 /* CGXExceptionHandler.h */; };
+		1D040B621CFF0709003DDCF2 /* CGXExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D040B601CFF0709003DDCF2 /* CGXExceptionHandler.m */; };
+		1D040B651CFF0D32003DDCF2 /* CGIMIMETools.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D040B631CFF0D32003DDCF2 /* CGIMIMETools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D040B661CFF0D32003DDCF2 /* CGIMIMETools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D040B641CFF0D32003DDCF2 /* CGIMIMETools.m */; };
+		1D040B681CFF1037003DDCF2 /* mime.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D040B671CFF1037003DDCF2 /* mime.json */; };
+		1D040B6B1CFF150E003DDCF2 /* CGXErrorHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D040B691CFF150E003DDCF2 /* CGXErrorHandler.h */; };
+		1D040B6C1CFF150E003DDCF2 /* CGXErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D040B6A1CFF150E003DDCF2 /* CGXErrorHandler.m */; };
+		1D040B6E1CFF1884003DDCF2 /* unhandled.html in Resources */ = {isa = PBXBuildFile; fileRef = 1D040B6D1CFF1884003DDCF2 /* unhandled.html */; };
+		1D040B701CFF1BC8003DDCF2 /* exception.html in Resources */ = {isa = PBXBuildFile; fileRef = 1D040B6F1CFF1BC8003DDCF2 /* exception.html */; };
+		1D040B731CFF1D68003DDCF2 /* CGIStringTemplating.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D040B711CFF1D68003DDCF2 /* CGIStringTemplating.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D040B741CFF1D68003DDCF2 /* CGIStringTemplating.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D040B721CFF1D68003DDCF2 /* CGIStringTemplating.m */; };
+		1D040B761CFF2141003DDCF2 /* error.html in Resources */ = {isa = PBXBuildFile; fileRef = 1D040B751CFF2141003DDCF2 /* error.html */; };
 		1D0781E91CF94689009ED89D /* CGIRequestTestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0781E81CF94689009ED89D /* CGIRequestTestSwift.swift */; };
 		1D0781EC1CFC5295009ED89D /* CGICookie.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D0781EA1CFC5295009ED89D /* CGICookie.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D0781ED1CFC5295009ED89D /* CGICookie.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0781EB1CFC5295009ED89D /* CGICookie.m */; };
@@ -17,8 +66,6 @@
 		1D07821A1CFC86C0009ED89D /* CGIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF06B761CF1B95A002E3AEF /* CGIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1D07821F1CFC86D2009ED89D /* CGXFastCGI.plugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1DF06BA51CF1BAFF002E3AEF /* CGXFastCGI.plugin */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1D0782241CFC8919009ED89D /* CGIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0782231CFC8919009ED89D /* CGIAppDelegate.m */; };
-		1D07822A1CFC97F3009ED89D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1D0782291CFC97F3009ED89D /* README.md */; };
-		1D07822C1CFC9970009ED89D /* LICENSE.md in Sources */ = {isa = PBXBuildFile; fileRef = 1D07822B1CFC9970009ED89D /* LICENSE.md */; };
 		1D7158A01CF46CCC009CD825 /* CGIRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D71589E1CF46CCC009CD825 /* CGIRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D7158A11CF46CCC009CD825 /* CGIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D71589F1CF46CCC009CD825 /* CGIRequest.m */; };
 		1D7158A41CF46D0A009CD825 /* CGIResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D7158A21CF46D0A009CD825 /* CGIResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -75,6 +122,50 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		1D040B331CFEFD1A003DDCF2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Web;
+			dstSubfolderSpec = 7;
+			files = (
+				1D040B341CFEFD4A003DDCF2 /* jquery.js in CopyFiles */,
+				1D040B351CFEFD4A003DDCF2 /* microcms.css in CopyFiles */,
+				1D040B361CFEFD4A003DDCF2 /* navbar.css in CopyFiles */,
+				1D040B371CFEFD4A003DDCF2 /* sf-ui-text-light-webfont.eot in CopyFiles */,
+				1D040B381CFEFD4A003DDCF2 /* sf-ui-text-light-webfont.svg in CopyFiles */,
+				1D040B391CFEFD4A003DDCF2 /* sf-ui-text-light-webfont.ttf in CopyFiles */,
+				1D040B3A1CFEFD4A003DDCF2 /* sf-ui-text-light-webfont.woff in CopyFiles */,
+				1D040B3B1CFEFD4A003DDCF2 /* sf-ui-text-light-webfont.woff2 in CopyFiles */,
+				1D040B3C1CFEFD4A003DDCF2 /* sf-ui-text-lightitalic-webfont.eot in CopyFiles */,
+				1D040B3D1CFEFD4A003DDCF2 /* sf-ui-text-lightitalic-webfont.svg in CopyFiles */,
+				1D040B3E1CFEFD4A003DDCF2 /* sf-ui-text-lightitalic-webfont.ttf in CopyFiles */,
+				1D040B3F1CFEFD4A003DDCF2 /* sf-ui-text-lightitalic-webfont.woff in CopyFiles */,
+				1D040B401CFEFD4A003DDCF2 /* sf-ui-text-lightitalic-webfont.woff2 in CopyFiles */,
+				1D040B411CFEFD4A003DDCF2 /* sf-ui-text-medium-webfont.eot in CopyFiles */,
+				1D040B421CFEFD4A003DDCF2 /* sf-ui-text-medium-webfont.svg in CopyFiles */,
+				1D040B431CFEFD4A003DDCF2 /* sf-ui-text-medium-webfont.ttf in CopyFiles */,
+				1D040B441CFEFD4A003DDCF2 /* sf-ui-text-medium-webfont.woff in CopyFiles */,
+				1D040B451CFEFD4A003DDCF2 /* sf-ui-text-medium-webfont.woff2 in CopyFiles */,
+				1D040B461CFEFD4A003DDCF2 /* sf-ui-text-mediumitalic-webfont.eot in CopyFiles */,
+				1D040B471CFEFD4A003DDCF2 /* sf-ui-text-mediumitalic-webfont.svg in CopyFiles */,
+				1D040B481CFEFD4A003DDCF2 /* sf-ui-text-mediumitalic-webfont.ttf in CopyFiles */,
+				1D040B491CFEFD4A003DDCF2 /* sf-ui-text-mediumitalic-webfont.woff in CopyFiles */,
+				1D040B4A1CFEFD4A003DDCF2 /* sf-ui-text-mediumitalic-webfont.woff2 in CopyFiles */,
+				1D040B4B1CFEFD4A003DDCF2 /* sf-ui.css in CopyFiles */,
+				1D040B4C1CFEFD4A003DDCF2 /* source-code-pro.css in CopyFiles */,
+				1D040B4D1CFEFD4A003DDCF2 /* sourcecodepro-light-webfont.eot in CopyFiles */,
+				1D040B4E1CFEFD4A003DDCF2 /* sourcecodepro-light-webfont.svg in CopyFiles */,
+				1D040B4F1CFEFD4A003DDCF2 /* sourcecodepro-light-webfont.ttf in CopyFiles */,
+				1D040B501CFEFD4A003DDCF2 /* sourcecodepro-light-webfont.woff in CopyFiles */,
+				1D040B511CFEFD4A003DDCF2 /* sourcecodepro-light-webfont.woff2 in CopyFiles */,
+				1D040B521CFEFD4A003DDCF2 /* sourcecodepro-medium-webfont.eot in CopyFiles */,
+				1D040B531CFEFD4A003DDCF2 /* sourcecodepro-medium-webfont.svg in CopyFiles */,
+				1D040B541CFEFD4A003DDCF2 /* sourcecodepro-medium-webfont.ttf in CopyFiles */,
+				1D040B551CFEFD4A003DDCF2 /* sourcecodepro-medium-webfont.woff in CopyFiles */,
+				1D040B561CFEFD4A003DDCF2 /* sourcecodepro-medium-webfont.woff2 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D07821D1CFC86C0009ED89D /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -109,8 +200,59 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1D0781DB1CF88748009ED89D /* CGISessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGISessionManager.h; sourceTree = "<group>"; };
-		1D0781DC1CF88748009ED89D /* CGISessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGISessionManager.m; sourceTree = "<group>"; };
+		1D040AE81CFEFCF6003DDCF2 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		1D040AE91CFEFCF6003DDCF2 /* jquery.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.js; sourceTree = "<group>"; };
+		1D040AEA1CFEFCF6003DDCF2 /* microcms.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = microcms.css; sourceTree = "<group>"; };
+		1D040AEB1CFEFCF6003DDCF2 /* navbar.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = navbar.css; sourceTree = "<group>"; };
+		1D040AEC1CFEFCF6003DDCF2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1D040AED1CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-light-webfont.eot"; sourceTree = "<group>"; };
+		1D040AEE1CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "sf-ui-text-light-webfont.svg"; sourceTree = "<group>"; };
+		1D040AEF1CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-light-webfont.ttf"; sourceTree = "<group>"; };
+		1D040AF01CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-light-webfont.woff"; sourceTree = "<group>"; };
+		1D040AF11CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-light-webfont.woff2"; sourceTree = "<group>"; };
+		1D040AF21CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-lightitalic-webfont.eot"; sourceTree = "<group>"; };
+		1D040AF31CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "sf-ui-text-lightitalic-webfont.svg"; sourceTree = "<group>"; };
+		1D040AF41CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-lightitalic-webfont.ttf"; sourceTree = "<group>"; };
+		1D040AF51CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-lightitalic-webfont.woff"; sourceTree = "<group>"; };
+		1D040AF61CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-lightitalic-webfont.woff2"; sourceTree = "<group>"; };
+		1D040AF71CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-medium-webfont.eot"; sourceTree = "<group>"; };
+		1D040AF81CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "sf-ui-text-medium-webfont.svg"; sourceTree = "<group>"; };
+		1D040AF91CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-medium-webfont.ttf"; sourceTree = "<group>"; };
+		1D040AFA1CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-medium-webfont.woff"; sourceTree = "<group>"; };
+		1D040AFB1CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-medium-webfont.woff2"; sourceTree = "<group>"; };
+		1D040AFC1CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-mediumitalic-webfont.eot"; sourceTree = "<group>"; };
+		1D040AFD1CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "sf-ui-text-mediumitalic-webfont.svg"; sourceTree = "<group>"; };
+		1D040AFE1CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-mediumitalic-webfont.ttf"; sourceTree = "<group>"; };
+		1D040AFF1CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-mediumitalic-webfont.woff"; sourceTree = "<group>"; };
+		1D040B001CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-mediumitalic-webfont.woff2"; sourceTree = "<group>"; };
+		1D040B011CFEFCF6003DDCF2 /* sf-ui.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "sf-ui.css"; sourceTree = "<group>"; };
+		1D040B021CFEFCF6003DDCF2 /* source-code-pro.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "source-code-pro.css"; sourceTree = "<group>"; };
+		1D040B031CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sourcecodepro-light-webfont.eot"; sourceTree = "<group>"; };
+		1D040B041CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "sourcecodepro-light-webfont.svg"; sourceTree = "<group>"; };
+		1D040B051CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sourcecodepro-light-webfont.ttf"; sourceTree = "<group>"; };
+		1D040B061CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sourcecodepro-light-webfont.woff"; sourceTree = "<group>"; };
+		1D040B071CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sourcecodepro-light-webfont.woff2"; sourceTree = "<group>"; };
+		1D040B081CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sourcecodepro-medium-webfont.eot"; sourceTree = "<group>"; };
+		1D040B091CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "sourcecodepro-medium-webfont.svg"; sourceTree = "<group>"; };
+		1D040B0A1CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sourcecodepro-medium-webfont.ttf"; sourceTree = "<group>"; };
+		1D040B0B1CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sourcecodepro-medium-webfont.woff"; sourceTree = "<group>"; };
+		1D040B0C1CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sourcecodepro-medium-webfont.woff2"; sourceTree = "<group>"; };
+		1D040B571CFF0339003DDCF2 /* CGXErrorPageResourceHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGXErrorPageResourceHandler.h; sourceTree = "<group>"; };
+		1D040B581CFF0339003DDCF2 /* CGXErrorPageResourceHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGXErrorPageResourceHandler.m; sourceTree = "<group>"; };
+		1D040B5B1CFF0516003DDCF2 /* CGXUnhandledRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGXUnhandledRequestHandler.h; sourceTree = "<group>"; };
+		1D040B5C1CFF0516003DDCF2 /* CGXUnhandledRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGXUnhandledRequestHandler.m; sourceTree = "<group>"; };
+		1D040B5F1CFF0709003DDCF2 /* CGXExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGXExceptionHandler.h; sourceTree = "<group>"; };
+		1D040B601CFF0709003DDCF2 /* CGXExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGXExceptionHandler.m; sourceTree = "<group>"; };
+		1D040B631CFF0D32003DDCF2 /* CGIMIMETools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIMIMETools.h; sourceTree = "<group>"; };
+		1D040B641CFF0D32003DDCF2 /* CGIMIMETools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIMIMETools.m; sourceTree = "<group>"; };
+		1D040B671CFF1037003DDCF2 /* mime.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mime.json; sourceTree = "<group>"; };
+		1D040B691CFF150E003DDCF2 /* CGXErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGXErrorHandler.h; sourceTree = "<group>"; };
+		1D040B6A1CFF150E003DDCF2 /* CGXErrorHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGXErrorHandler.m; sourceTree = "<group>"; };
+		1D040B6D1CFF1884003DDCF2 /* unhandled.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = unhandled.html; sourceTree = "<group>"; };
+		1D040B6F1CFF1BC8003DDCF2 /* exception.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = exception.html; sourceTree = "<group>"; };
+		1D040B711CFF1D68003DDCF2 /* CGIStringTemplating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIStringTemplating.h; sourceTree = "<group>"; };
+		1D040B721CFF1D68003DDCF2 /* CGIStringTemplating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIStringTemplating.m; sourceTree = "<group>"; };
+		1D040B751CFF2141003DDCF2 /* error.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = error.html; sourceTree = "<group>"; };
 		1D0781E71CF94688009ED89D /* CGIKitTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CGIKitTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		1D0781E81CF94689009ED89D /* CGIRequestTestSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGIRequestTestSwift.swift; sourceTree = "<group>"; };
 		1D0781EA1CFC5295009ED89D /* CGICookie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGICookie.h; sourceTree = "<group>"; };
@@ -170,6 +312,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D040AE71CFEFCF6003DDCF2 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				1D040AE81CFEFCF6003DDCF2 /* .gitignore */,
+				1D040AE91CFEFCF6003DDCF2 /* jquery.js */,
+				1D040AEA1CFEFCF6003DDCF2 /* microcms.css */,
+				1D040AEB1CFEFCF6003DDCF2 /* navbar.css */,
+				1D040AEC1CFEFCF6003DDCF2 /* README.md */,
+				1D040AED1CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.eot */,
+				1D040AEE1CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.svg */,
+				1D040AEF1CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.ttf */,
+				1D040AF01CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.woff */,
+				1D040AF11CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.woff2 */,
+				1D040AF21CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.eot */,
+				1D040AF31CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.svg */,
+				1D040AF41CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.ttf */,
+				1D040AF51CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.woff */,
+				1D040AF61CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.woff2 */,
+				1D040AF71CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.eot */,
+				1D040AF81CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.svg */,
+				1D040AF91CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.ttf */,
+				1D040AFA1CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.woff */,
+				1D040AFB1CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.woff2 */,
+				1D040AFC1CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.eot */,
+				1D040AFD1CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.svg */,
+				1D040AFE1CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.ttf */,
+				1D040AFF1CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.woff */,
+				1D040B001CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.woff2 */,
+				1D040B011CFEFCF6003DDCF2 /* sf-ui.css */,
+				1D040B021CFEFCF6003DDCF2 /* source-code-pro.css */,
+				1D040B031CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.eot */,
+				1D040B041CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.svg */,
+				1D040B051CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.ttf */,
+				1D040B061CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.woff */,
+				1D040B071CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.woff2 */,
+				1D040B081CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.eot */,
+				1D040B091CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.svg */,
+				1D040B0A1CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.ttf */,
+				1D040B0B1CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.woff */,
+				1D040B0C1CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.woff2 */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
 		1D0782081CFC8693009ED89D /* CGXHello */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +398,14 @@
 				1DF06BB31CF1BD99002E3AEF /* CGICommon.h */,
 				1DF06BB51CF22D70002E3AEF /* CGIListener.h */,
 				1DF06BB61CF22D70002E3AEF /* CGIListener.m */,
+				1D040B571CFF0339003DDCF2 /* CGXErrorPageResourceHandler.h */,
+				1D040B581CFF0339003DDCF2 /* CGXErrorPageResourceHandler.m */,
+				1D040B5B1CFF0516003DDCF2 /* CGXUnhandledRequestHandler.h */,
+				1D040B5C1CFF0516003DDCF2 /* CGXUnhandledRequestHandler.m */,
+				1D040B5F1CFF0709003DDCF2 /* CGXExceptionHandler.h */,
+				1D040B601CFF0709003DDCF2 /* CGXExceptionHandler.m */,
+				1D040B691CFF150E003DDCF2 /* CGXErrorHandler.h */,
+				1D040B6A1CFF150E003DDCF2 /* CGXErrorHandler.m */,
 				1DF06BAF1CF1BD50002E3AEF /* CGIContext.h */,
 				1DF06BB01CF1BD50002E3AEF /* CGIContext.m */,
 				1D71589E1CF46CCC009CD825 /* CGIRequest.h */,
@@ -222,9 +416,16 @@
 				1D0781EB1CFC5295009ED89D /* CGICookie.m */,
 				1D7158A61CF46D15009CD825 /* CGIServerHelper.h */,
 				1D7158A71CF46D15009CD825 /* CGIServerHelper.m */,
-				1D0781DB1CF88748009ED89D /* CGISessionManager.h */,
-				1D0781DC1CF88748009ED89D /* CGISessionManager.m */,
+				1D040B631CFF0D32003DDCF2 /* CGIMIMETools.h */,
+				1D040B641CFF0D32003DDCF2 /* CGIMIMETools.m */,
+				1D040B711CFF1D68003DDCF2 /* CGIStringTemplating.h */,
+				1D040B721CFF1D68003DDCF2 /* CGIStringTemplating.m */,
+				1D040B671CFF1037003DDCF2 /* mime.json */,
+				1D040AE71CFEFCF6003DDCF2 /* Web */,
 				1DF06B7B1CF1B95A002E3AEF /* Info.plist */,
+				1D040B6D1CFF1884003DDCF2 /* unhandled.html */,
+				1D040B6F1CFF1BC8003DDCF2 /* exception.html */,
+				1D040B751CFF2141003DDCF2 /* error.html */,
 			);
 			path = CGIKit;
 			sourceTree = "<group>";
@@ -264,13 +465,18 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D040B591CFF0339003DDCF2 /* CGXErrorPageResourceHandler.h in Headers */,
 				1DF06BB71CF22D70002E3AEF /* CGIListener.h in Headers */,
 				1D7158A81CF46D15009CD825 /* CGIServerHelper.h in Headers */,
+				1D040B6B1CFF150E003DDCF2 /* CGXErrorHandler.h in Headers */,
 				1DF06BB41CF1BD9E002E3AEF /* CGICommon.h in Headers */,
-				1D0781DD1CF88748009ED89D /* CGISessionManager.h in Headers */,
+				1D040B5D1CFF0516003DDCF2 /* CGXUnhandledRequestHandler.h in Headers */,
 				1D7158A01CF46CCC009CD825 /* CGIRequest.h in Headers */,
+				1D040B611CFF0709003DDCF2 /* CGXExceptionHandler.h in Headers */,
+				1D040B731CFF1D68003DDCF2 /* CGIStringTemplating.h in Headers */,
 				1DF06BB11CF1BD50002E3AEF /* CGIContext.h in Headers */,
 				1D0781EC1CFC5295009ED89D /* CGICookie.h in Headers */,
+				1D040B651CFF0D32003DDCF2 /* CGIMIMETools.h in Headers */,
 				1DF06B7A1CF1B95A002E3AEF /* CGIKit.h in Headers */,
 				1D7158A41CF46D0A009CD825 /* CGIResponse.h in Headers */,
 			);
@@ -308,6 +514,7 @@
 				1DF06B721CF1B95A002E3AEF /* Frameworks */,
 				1DF06B731CF1B95A002E3AEF /* Headers */,
 				1DF06B741CF1B95A002E3AEF /* Resources */,
+				1D040B331CFEFD1A003DDCF2 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -413,6 +620,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D040B701CFF1BC8003DDCF2 /* exception.html in Resources */,
+				1D040B6E1CFF1884003DDCF2 /* unhandled.html in Resources */,
+				1D040B681CFF1037003DDCF2 /* mime.json in Resources */,
+				1D040B761CFF2141003DDCF2 /* error.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,8 +641,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D07822C1CFC9970009ED89D /* LICENSE.md in Sources */,
-				1D07822A1CFC97F3009ED89D /* README.md in Sources */,
 				1D0782241CFC8919009ED89D /* CGIAppDelegate.m in Sources */,
 				1D07820E1CFC8693009ED89D /* main.m in Sources */,
 			);
@@ -444,10 +653,15 @@
 				1D7158A91CF46D15009CD825 /* CGIServerHelper.m in Sources */,
 				1DF06BB21CF1BD50002E3AEF /* CGIContext.m in Sources */,
 				1D7158A11CF46CCC009CD825 /* CGIRequest.m in Sources */,
+				1D040B5E1CFF0516003DDCF2 /* CGXUnhandledRequestHandler.m in Sources */,
 				1D0781ED1CFC5295009ED89D /* CGICookie.m in Sources */,
 				1D7158A51CF46D0A009CD825 /* CGIResponse.m in Sources */,
-				1D0781DE1CF88748009ED89D /* CGISessionManager.m in Sources */,
+				1D040B621CFF0709003DDCF2 /* CGXExceptionHandler.m in Sources */,
+				1D040B6C1CFF150E003DDCF2 /* CGXErrorHandler.m in Sources */,
 				1DF06BB81CF22D70002E3AEF /* CGIListener.m in Sources */,
+				1D040B661CFF0D32003DDCF2 /* CGIMIMETools.m in Sources */,
+				1D040B5A1CFF0339003DDCF2 /* CGXErrorPageResourceHandler.m in Sources */,
+				1D040B741CFF1D68003DDCF2 /* CGIStringTemplating.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,6 +879,7 @@
 				1D0782171CFC8693009ED89D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1DF06B701CF1B95A002E3AEF /* Build configuration list for PBXProject "CGIKit" */ = {
 			isa = XCConfigurationList;

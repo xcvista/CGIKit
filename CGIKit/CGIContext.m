@@ -14,5 +14,6 @@
 @synthesize request = _request;
 @synthesize response = _response;
 @synthesize server = _server;
+@synthesize session = _session;
 
 @end
