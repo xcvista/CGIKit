@@ -18,6 +18,11 @@
         NSRange marker = [context.request.requestURI rangeOfString:CGISpecialPathMarker options:NSBackwardsSearch];
         path = [context.request.requestURI substringFromIndex:NSMaxRange(marker)];
     }
+    NSRange questionMark = [path rangeOfString:@"?"];
+    if (questionMark.location != NSNotFound)
+    {
+        path = [path substringToIndex:questionMark.location];
+    }
     NSArray *pathComponents = path.pathComponents;
     pathComponents = [pathComponents subarrayWithRange:NSMakeRange(1, pathComponents.count - 1)];
     

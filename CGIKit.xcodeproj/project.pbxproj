@@ -7,41 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D040B341CFEFD4A003DDCF2 /* jquery.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AE91CFEFCF6003DDCF2 /* jquery.js */; };
-		1D040B351CFEFD4A003DDCF2 /* microcms.css in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AEA1CFEFCF6003DDCF2 /* microcms.css */; };
-		1D040B361CFEFD4A003DDCF2 /* navbar.css in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AEB1CFEFCF6003DDCF2 /* navbar.css */; };
-		1D040B371CFEFD4A003DDCF2 /* sf-ui-text-light-webfont.eot in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AED1CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.eot */; };
-		1D040B381CFEFD4A003DDCF2 /* sf-ui-text-light-webfont.svg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AEE1CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.svg */; };
-		1D040B391CFEFD4A003DDCF2 /* sf-ui-text-light-webfont.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AEF1CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.ttf */; };
-		1D040B3A1CFEFD4A003DDCF2 /* sf-ui-text-light-webfont.woff in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AF01CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.woff */; };
-		1D040B3B1CFEFD4A003DDCF2 /* sf-ui-text-light-webfont.woff2 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AF11CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.woff2 */; };
-		1D040B3C1CFEFD4A003DDCF2 /* sf-ui-text-lightitalic-webfont.eot in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AF21CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.eot */; };
-		1D040B3D1CFEFD4A003DDCF2 /* sf-ui-text-lightitalic-webfont.svg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AF31CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.svg */; };
-		1D040B3E1CFEFD4A003DDCF2 /* sf-ui-text-lightitalic-webfont.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AF41CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.ttf */; };
-		1D040B3F1CFEFD4A003DDCF2 /* sf-ui-text-lightitalic-webfont.woff in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AF51CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.woff */; };
-		1D040B401CFEFD4A003DDCF2 /* sf-ui-text-lightitalic-webfont.woff2 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AF61CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.woff2 */; };
-		1D040B411CFEFD4A003DDCF2 /* sf-ui-text-medium-webfont.eot in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AF71CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.eot */; };
-		1D040B421CFEFD4A003DDCF2 /* sf-ui-text-medium-webfont.svg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AF81CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.svg */; };
-		1D040B431CFEFD4A003DDCF2 /* sf-ui-text-medium-webfont.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AF91CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.ttf */; };
-		1D040B441CFEFD4A003DDCF2 /* sf-ui-text-medium-webfont.woff in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AFA1CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.woff */; };
-		1D040B451CFEFD4A003DDCF2 /* sf-ui-text-medium-webfont.woff2 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AFB1CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.woff2 */; };
-		1D040B461CFEFD4A003DDCF2 /* sf-ui-text-mediumitalic-webfont.eot in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AFC1CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.eot */; };
-		1D040B471CFEFD4A003DDCF2 /* sf-ui-text-mediumitalic-webfont.svg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AFD1CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.svg */; };
-		1D040B481CFEFD4A003DDCF2 /* sf-ui-text-mediumitalic-webfont.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AFE1CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.ttf */; };
-		1D040B491CFEFD4A003DDCF2 /* sf-ui-text-mediumitalic-webfont.woff in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040AFF1CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.woff */; };
-		1D040B4A1CFEFD4A003DDCF2 /* sf-ui-text-mediumitalic-webfont.woff2 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B001CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.woff2 */; };
-		1D040B4B1CFEFD4A003DDCF2 /* sf-ui.css in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B011CFEFCF6003DDCF2 /* sf-ui.css */; };
-		1D040B4C1CFEFD4A003DDCF2 /* source-code-pro.css in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B021CFEFCF6003DDCF2 /* source-code-pro.css */; };
-		1D040B4D1CFEFD4A003DDCF2 /* sourcecodepro-light-webfont.eot in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B031CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.eot */; };
-		1D040B4E1CFEFD4A003DDCF2 /* sourcecodepro-light-webfont.svg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B041CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.svg */; };
-		1D040B4F1CFEFD4A003DDCF2 /* sourcecodepro-light-webfont.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B051CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.ttf */; };
-		1D040B501CFEFD4A003DDCF2 /* sourcecodepro-light-webfont.woff in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B061CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.woff */; };
-		1D040B511CFEFD4A003DDCF2 /* sourcecodepro-light-webfont.woff2 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B071CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.woff2 */; };
-		1D040B521CFEFD4A003DDCF2 /* sourcecodepro-medium-webfont.eot in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B081CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.eot */; };
-		1D040B531CFEFD4A003DDCF2 /* sourcecodepro-medium-webfont.svg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B091CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.svg */; };
-		1D040B541CFEFD4A003DDCF2 /* sourcecodepro-medium-webfont.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B0A1CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.ttf */; };
-		1D040B551CFEFD4A003DDCF2 /* sourcecodepro-medium-webfont.woff in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B0B1CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.woff */; };
-		1D040B561CFEFD4A003DDCF2 /* sourcecodepro-medium-webfont.woff2 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D040B0C1CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.woff2 */; };
 		1D040B591CFF0339003DDCF2 /* CGXErrorPageResourceHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D040B571CFF0339003DDCF2 /* CGXErrorPageResourceHandler.h */; };
 		1D040B5A1CFF0339003DDCF2 /* CGXErrorPageResourceHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D040B581CFF0339003DDCF2 /* CGXErrorPageResourceHandler.m */; };
 		1D040B5D1CFF0516003DDCF2 /* CGXUnhandledRequestHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D040B5B1CFF0516003DDCF2 /* CGXUnhandledRequestHandler.h */; };
@@ -58,7 +23,11 @@
 		1D040B731CFF1D68003DDCF2 /* CGIStringTemplating.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D040B711CFF1D68003DDCF2 /* CGIStringTemplating.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D040B741CFF1D68003DDCF2 /* CGIStringTemplating.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D040B721CFF1D68003DDCF2 /* CGIStringTemplating.m */; };
 		1D040B761CFF2141003DDCF2 /* error.html in Resources */ = {isa = PBXBuildFile; fileRef = 1D040B751CFF2141003DDCF2 /* error.html */; };
-		1D0781E91CF94689009ED89D /* CGIRequestTestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0781E81CF94689009ED89D /* CGIRequestTestSwift.swift */; };
+		1D040B7F1CFF2A2A003DDCF2 /* WebUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D040B7E1CFF2A2A003DDCF2 /* WebUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D040B831CFF2A2A003DDCF2 /* WebUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D040B7C1CFF2A2A003DDCF2 /* WebUIKit.framework */; };
+		1D040B841CFF2A2A003DDCF2 /* WebUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1D040B7C1CFF2A2A003DDCF2 /* WebUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1D040B891CFF2BED003DDCF2 /* Web in Resources */ = {isa = PBXBuildFile; fileRef = 1D040B881CFF2BED003DDCF2 /* Web */; };
+		1D040B8B1CFF2C16003DDCF2 /* Web in Resources */ = {isa = PBXBuildFile; fileRef = 1D040B8A1CFF2C16003DDCF2 /* Web */; };
 		1D0781EC1CFC5295009ED89D /* CGICookie.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D0781EA1CFC5295009ED89D /* CGICookie.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D0781ED1CFC5295009ED89D /* CGICookie.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0781EB1CFC5295009ED89D /* CGICookie.m */; };
 		1D07820E1CFC8693009ED89D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D07820D1CFC8693009ED89D /* main.m */; };
@@ -78,12 +47,16 @@
 		1DF06BB41CF1BD9E002E3AEF /* CGICommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DF06BB31CF1BD99002E3AEF /* CGICommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DF06BB71CF22D70002E3AEF /* CGIListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DF06BB51CF22D70002E3AEF /* CGIListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DF06BB81CF22D70002E3AEF /* CGIListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF06BB61CF22D70002E3AEF /* CGIListener.m */; };
-		1DF06BC01CF235EC002E3AEF /* CGIKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF06BBF1CF235EC002E3AEF /* CGIKitTests.m */; };
-		1DF06BC21CF235EC002E3AEF /* CGIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF06B761CF1B95A002E3AEF /* CGIKit.framework */; };
-		1DF06BC91CF235FF002E3AEF /* CGIKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1DF06B761CF1B95A002E3AEF /* CGIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1D040B811CFF2A2A003DDCF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DF06B6D1CF1B95A002E3AEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D040B7B1CFF2A2A003DDCF2;
+			remoteInfo = WebUIKit;
+		};
 		1D07821B1CFC86C0009ED89D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1DF06B6D1CF1B95A002E3AEF /* Project object */;
@@ -112,66 +85,16 @@
 			remoteGlobalIDString = 1DF06B9B1CF1BABB002E3AEF;
 			remoteInfo = CGXHypertext;
 		};
-		1DF06BC31CF235EC002E3AEF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1DF06B6D1CF1B95A002E3AEF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1DF06B751CF1B95A002E3AEF;
-			remoteInfo = CGIKit;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1D040B331CFEFD1A003DDCF2 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = Web;
-			dstSubfolderSpec = 7;
-			files = (
-				1D040B341CFEFD4A003DDCF2 /* jquery.js in CopyFiles */,
-				1D040B351CFEFD4A003DDCF2 /* microcms.css in CopyFiles */,
-				1D040B361CFEFD4A003DDCF2 /* navbar.css in CopyFiles */,
-				1D040B371CFEFD4A003DDCF2 /* sf-ui-text-light-webfont.eot in CopyFiles */,
-				1D040B381CFEFD4A003DDCF2 /* sf-ui-text-light-webfont.svg in CopyFiles */,
-				1D040B391CFEFD4A003DDCF2 /* sf-ui-text-light-webfont.ttf in CopyFiles */,
-				1D040B3A1CFEFD4A003DDCF2 /* sf-ui-text-light-webfont.woff in CopyFiles */,
-				1D040B3B1CFEFD4A003DDCF2 /* sf-ui-text-light-webfont.woff2 in CopyFiles */,
-				1D040B3C1CFEFD4A003DDCF2 /* sf-ui-text-lightitalic-webfont.eot in CopyFiles */,
-				1D040B3D1CFEFD4A003DDCF2 /* sf-ui-text-lightitalic-webfont.svg in CopyFiles */,
-				1D040B3E1CFEFD4A003DDCF2 /* sf-ui-text-lightitalic-webfont.ttf in CopyFiles */,
-				1D040B3F1CFEFD4A003DDCF2 /* sf-ui-text-lightitalic-webfont.woff in CopyFiles */,
-				1D040B401CFEFD4A003DDCF2 /* sf-ui-text-lightitalic-webfont.woff2 in CopyFiles */,
-				1D040B411CFEFD4A003DDCF2 /* sf-ui-text-medium-webfont.eot in CopyFiles */,
-				1D040B421CFEFD4A003DDCF2 /* sf-ui-text-medium-webfont.svg in CopyFiles */,
-				1D040B431CFEFD4A003DDCF2 /* sf-ui-text-medium-webfont.ttf in CopyFiles */,
-				1D040B441CFEFD4A003DDCF2 /* sf-ui-text-medium-webfont.woff in CopyFiles */,
-				1D040B451CFEFD4A003DDCF2 /* sf-ui-text-medium-webfont.woff2 in CopyFiles */,
-				1D040B461CFEFD4A003DDCF2 /* sf-ui-text-mediumitalic-webfont.eot in CopyFiles */,
-				1D040B471CFEFD4A003DDCF2 /* sf-ui-text-mediumitalic-webfont.svg in CopyFiles */,
-				1D040B481CFEFD4A003DDCF2 /* sf-ui-text-mediumitalic-webfont.ttf in CopyFiles */,
-				1D040B491CFEFD4A003DDCF2 /* sf-ui-text-mediumitalic-webfont.woff in CopyFiles */,
-				1D040B4A1CFEFD4A003DDCF2 /* sf-ui-text-mediumitalic-webfont.woff2 in CopyFiles */,
-				1D040B4B1CFEFD4A003DDCF2 /* sf-ui.css in CopyFiles */,
-				1D040B4C1CFEFD4A003DDCF2 /* source-code-pro.css in CopyFiles */,
-				1D040B4D1CFEFD4A003DDCF2 /* sourcecodepro-light-webfont.eot in CopyFiles */,
-				1D040B4E1CFEFD4A003DDCF2 /* sourcecodepro-light-webfont.svg in CopyFiles */,
-				1D040B4F1CFEFD4A003DDCF2 /* sourcecodepro-light-webfont.ttf in CopyFiles */,
-				1D040B501CFEFD4A003DDCF2 /* sourcecodepro-light-webfont.woff in CopyFiles */,
-				1D040B511CFEFD4A003DDCF2 /* sourcecodepro-light-webfont.woff2 in CopyFiles */,
-				1D040B521CFEFD4A003DDCF2 /* sourcecodepro-medium-webfont.eot in CopyFiles */,
-				1D040B531CFEFD4A003DDCF2 /* sourcecodepro-medium-webfont.svg in CopyFiles */,
-				1D040B541CFEFD4A003DDCF2 /* sourcecodepro-medium-webfont.ttf in CopyFiles */,
-				1D040B551CFEFD4A003DDCF2 /* sourcecodepro-medium-webfont.woff in CopyFiles */,
-				1D040B561CFEFD4A003DDCF2 /* sourcecodepro-medium-webfont.woff2 in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1D07821D1CFC86C0009ED89D /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				1D040B841CFF2A2A003DDCF2 /* WebUIKit.framework in Embed Frameworks */,
 				1D07821A1CFC86C0009ED89D /* CGIKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -187,56 +110,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1DF06BC81CF235F7002E3AEF /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				1DF06BC91CF235FF002E3AEF /* CGIKit.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1D040AE81CFEFCF6003DDCF2 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		1D040AE91CFEFCF6003DDCF2 /* jquery.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.js; sourceTree = "<group>"; };
-		1D040AEA1CFEFCF6003DDCF2 /* microcms.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = microcms.css; sourceTree = "<group>"; };
-		1D040AEB1CFEFCF6003DDCF2 /* navbar.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = navbar.css; sourceTree = "<group>"; };
-		1D040AEC1CFEFCF6003DDCF2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		1D040AED1CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-light-webfont.eot"; sourceTree = "<group>"; };
-		1D040AEE1CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "sf-ui-text-light-webfont.svg"; sourceTree = "<group>"; };
-		1D040AEF1CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-light-webfont.ttf"; sourceTree = "<group>"; };
-		1D040AF01CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-light-webfont.woff"; sourceTree = "<group>"; };
-		1D040AF11CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-light-webfont.woff2"; sourceTree = "<group>"; };
-		1D040AF21CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-lightitalic-webfont.eot"; sourceTree = "<group>"; };
-		1D040AF31CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "sf-ui-text-lightitalic-webfont.svg"; sourceTree = "<group>"; };
-		1D040AF41CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-lightitalic-webfont.ttf"; sourceTree = "<group>"; };
-		1D040AF51CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-lightitalic-webfont.woff"; sourceTree = "<group>"; };
-		1D040AF61CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-lightitalic-webfont.woff2"; sourceTree = "<group>"; };
-		1D040AF71CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-medium-webfont.eot"; sourceTree = "<group>"; };
-		1D040AF81CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "sf-ui-text-medium-webfont.svg"; sourceTree = "<group>"; };
-		1D040AF91CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-medium-webfont.ttf"; sourceTree = "<group>"; };
-		1D040AFA1CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-medium-webfont.woff"; sourceTree = "<group>"; };
-		1D040AFB1CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-medium-webfont.woff2"; sourceTree = "<group>"; };
-		1D040AFC1CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-mediumitalic-webfont.eot"; sourceTree = "<group>"; };
-		1D040AFD1CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "sf-ui-text-mediumitalic-webfont.svg"; sourceTree = "<group>"; };
-		1D040AFE1CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-mediumitalic-webfont.ttf"; sourceTree = "<group>"; };
-		1D040AFF1CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-mediumitalic-webfont.woff"; sourceTree = "<group>"; };
-		1D040B001CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-mediumitalic-webfont.woff2"; sourceTree = "<group>"; };
-		1D040B011CFEFCF6003DDCF2 /* sf-ui.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "sf-ui.css"; sourceTree = "<group>"; };
-		1D040B021CFEFCF6003DDCF2 /* source-code-pro.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "source-code-pro.css"; sourceTree = "<group>"; };
-		1D040B031CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sourcecodepro-light-webfont.eot"; sourceTree = "<group>"; };
-		1D040B041CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "sourcecodepro-light-webfont.svg"; sourceTree = "<group>"; };
-		1D040B051CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sourcecodepro-light-webfont.ttf"; sourceTree = "<group>"; };
-		1D040B061CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sourcecodepro-light-webfont.woff"; sourceTree = "<group>"; };
-		1D040B071CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sourcecodepro-light-webfont.woff2"; sourceTree = "<group>"; };
-		1D040B081CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sourcecodepro-medium-webfont.eot"; sourceTree = "<group>"; };
-		1D040B091CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "sourcecodepro-medium-webfont.svg"; sourceTree = "<group>"; };
-		1D040B0A1CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sourcecodepro-medium-webfont.ttf"; sourceTree = "<group>"; };
-		1D040B0B1CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sourcecodepro-medium-webfont.woff"; sourceTree = "<group>"; };
-		1D040B0C1CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sourcecodepro-medium-webfont.woff2"; sourceTree = "<group>"; };
 		1D040B571CFF0339003DDCF2 /* CGXErrorPageResourceHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGXErrorPageResourceHandler.h; sourceTree = "<group>"; };
 		1D040B581CFF0339003DDCF2 /* CGXErrorPageResourceHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGXErrorPageResourceHandler.m; sourceTree = "<group>"; };
 		1D040B5B1CFF0516003DDCF2 /* CGXUnhandledRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGXUnhandledRequestHandler.h; sourceTree = "<group>"; };
@@ -253,8 +129,11 @@
 		1D040B711CFF1D68003DDCF2 /* CGIStringTemplating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIStringTemplating.h; sourceTree = "<group>"; };
 		1D040B721CFF1D68003DDCF2 /* CGIStringTemplating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIStringTemplating.m; sourceTree = "<group>"; };
 		1D040B751CFF2141003DDCF2 /* error.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = error.html; sourceTree = "<group>"; };
-		1D0781E71CF94688009ED89D /* CGIKitTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CGIKitTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		1D0781E81CF94689009ED89D /* CGIRequestTestSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGIRequestTestSwift.swift; sourceTree = "<group>"; };
+		1D040B7C1CFF2A2A003DDCF2 /* WebUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D040B7E1CFF2A2A003DDCF2 /* WebUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebUIKit.h; sourceTree = "<group>"; };
+		1D040B801CFF2A2A003DDCF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D040B881CFF2BED003DDCF2 /* Web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Web; sourceTree = "<group>"; };
+		1D040B8A1CFF2C16003DDCF2 /* Web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Web; sourceTree = "<group>"; };
 		1D0781EA1CFC5295009ED89D /* CGICookie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGICookie.h; sourceTree = "<group>"; };
 		1D0781EB1CFC5295009ED89D /* CGICookie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGICookie.m; sourceTree = "<group>"; };
 		1D0782071CFC8693009ED89D /* CGXHello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CGXHello.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -280,16 +159,21 @@
 		1DF06BB31CF1BD99002E3AEF /* CGICommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGICommon.h; sourceTree = "<group>"; };
 		1DF06BB51CF22D70002E3AEF /* CGIListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIListener.h; sourceTree = "<group>"; };
 		1DF06BB61CF22D70002E3AEF /* CGIListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIListener.m; sourceTree = "<group>"; };
-		1DF06BBD1CF235EC002E3AEF /* CGIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CGIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DF06BBF1CF235EC002E3AEF /* CGIKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGIKitTests.m; sourceTree = "<group>"; };
-		1DF06BC11CF235EC002E3AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1D040B781CFF2A2A003DDCF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D0782041CFC8693009ED89D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D040B831CFF2A2A003DDCF2 /* WebUIKit.framework in Frameworks */,
 				1D0782191CFC86C0009ED89D /* CGIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,59 +185,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1DF06BBA1CF235EC002E3AEF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1DF06BC21CF235EC002E3AEF /* CGIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D040AE71CFEFCF6003DDCF2 /* Web */ = {
+		1D040B7D1CFF2A2A003DDCF2 /* WebUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				1D040AE81CFEFCF6003DDCF2 /* .gitignore */,
-				1D040AE91CFEFCF6003DDCF2 /* jquery.js */,
-				1D040AEA1CFEFCF6003DDCF2 /* microcms.css */,
-				1D040AEB1CFEFCF6003DDCF2 /* navbar.css */,
-				1D040AEC1CFEFCF6003DDCF2 /* README.md */,
-				1D040AED1CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.eot */,
-				1D040AEE1CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.svg */,
-				1D040AEF1CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.ttf */,
-				1D040AF01CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.woff */,
-				1D040AF11CFEFCF6003DDCF2 /* sf-ui-text-light-webfont.woff2 */,
-				1D040AF21CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.eot */,
-				1D040AF31CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.svg */,
-				1D040AF41CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.ttf */,
-				1D040AF51CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.woff */,
-				1D040AF61CFEFCF6003DDCF2 /* sf-ui-text-lightitalic-webfont.woff2 */,
-				1D040AF71CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.eot */,
-				1D040AF81CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.svg */,
-				1D040AF91CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.ttf */,
-				1D040AFA1CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.woff */,
-				1D040AFB1CFEFCF6003DDCF2 /* sf-ui-text-medium-webfont.woff2 */,
-				1D040AFC1CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.eot */,
-				1D040AFD1CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.svg */,
-				1D040AFE1CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.ttf */,
-				1D040AFF1CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.woff */,
-				1D040B001CFEFCF6003DDCF2 /* sf-ui-text-mediumitalic-webfont.woff2 */,
-				1D040B011CFEFCF6003DDCF2 /* sf-ui.css */,
-				1D040B021CFEFCF6003DDCF2 /* source-code-pro.css */,
-				1D040B031CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.eot */,
-				1D040B041CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.svg */,
-				1D040B051CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.ttf */,
-				1D040B061CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.woff */,
-				1D040B071CFEFCF6003DDCF2 /* sourcecodepro-light-webfont.woff2 */,
-				1D040B081CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.eot */,
-				1D040B091CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.svg */,
-				1D040B0A1CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.ttf */,
-				1D040B0B1CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.woff */,
-				1D040B0C1CFEFCF6003DDCF2 /* sourcecodepro-medium-webfont.woff2 */,
+				1D040B7E1CFF2A2A003DDCF2 /* WebUIKit.h */,
+				1D040B801CFF2A2A003DDCF2 /* Info.plist */,
+				1D040B881CFF2BED003DDCF2 /* Web */,
 			);
-			path = Web;
+			path = WebUIKit;
 			sourceTree = "<group>";
 		};
 		1D0782081CFC8693009ED89D /* CGXHello */ = {
@@ -374,9 +216,9 @@
 				1D0782291CFC97F3009ED89D /* README.md */,
 				1D07822B1CFC9970009ED89D /* LICENSE.md */,
 				1DF06B781CF1B95A002E3AEF /* CGIKit */,
-				1DF06BBE1CF235EC002E3AEF /* CGIKitTests */,
-				1DF06B811CF1B9BD002E3AEF /* Subprojects */,
+				1D040B7D1CFF2A2A003DDCF2 /* WebUIKit */,
 				1D0782081CFC8693009ED89D /* CGXHello */,
+				1DF06B811CF1B9BD002E3AEF /* Subprojects */,
 				1DF06B771CF1B95A002E3AEF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -385,8 +227,8 @@
 			isa = PBXGroup;
 			children = (
 				1DF06B761CF1B95A002E3AEF /* CGIKit.framework */,
-				1DF06BBD1CF235EC002E3AEF /* CGIKitTests.xctest */,
 				1D0782071CFC8693009ED89D /* CGXHello.app */,
+				1D040B7C1CFF2A2A003DDCF2 /* WebUIKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -421,11 +263,11 @@
 				1D040B711CFF1D68003DDCF2 /* CGIStringTemplating.h */,
 				1D040B721CFF1D68003DDCF2 /* CGIStringTemplating.m */,
 				1D040B671CFF1037003DDCF2 /* mime.json */,
-				1D040AE71CFEFCF6003DDCF2 /* Web */,
 				1DF06B7B1CF1B95A002E3AEF /* Info.plist */,
 				1D040B6D1CFF1884003DDCF2 /* unhandled.html */,
 				1D040B6F1CFF1BC8003DDCF2 /* exception.html */,
 				1D040B751CFF2141003DDCF2 /* error.html */,
+				1D040B8A1CFF2C16003DDCF2 /* Web */,
 			);
 			path = CGIKit;
 			sourceTree = "<group>";
@@ -447,20 +289,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1DF06BBE1CF235EC002E3AEF /* CGIKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				1DF06BBF1CF235EC002E3AEF /* CGIKitTests.m */,
-				1D0781E81CF94689009ED89D /* CGIRequestTestSwift.swift */,
-				1DF06BC11CF235EC002E3AEF /* Info.plist */,
-				1D0781E71CF94688009ED89D /* CGIKitTests-Bridging-Header.h */,
-			);
-			path = CGIKitTests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1D040B791CFF2A2A003DDCF2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D040B7F1CFF2A2A003DDCF2 /* WebUIKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1DF06B731CF1B95A002E3AEF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -485,6 +324,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1D040B7B1CFF2A2A003DDCF2 /* WebUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D040B851CFF2A2A003DDCF2 /* Build configuration list for PBXNativeTarget "WebUIKit" */;
+			buildPhases = (
+				1D040B771CFF2A2A003DDCF2 /* Sources */,
+				1D040B781CFF2A2A003DDCF2 /* Frameworks */,
+				1D040B791CFF2A2A003DDCF2 /* Headers */,
+				1D040B7A1CFF2A2A003DDCF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebUIKit;
+			productName = WebUIKit;
+			productReference = 1D040B7C1CFF2A2A003DDCF2 /* WebUIKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		1D0782061CFC8693009ED89D /* CGXHello */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D0782151CFC8693009ED89D /* Build configuration list for PBXNativeTarget "CGXHello" */;
@@ -500,6 +357,7 @@
 			dependencies = (
 				1D0782211CFC86D9009ED89D /* PBXTargetDependency */,
 				1D07821C1CFC86C0009ED89D /* PBXTargetDependency */,
+				1D040B821CFF2A2A003DDCF2 /* PBXTargetDependency */,
 			);
 			name = CGXHello;
 			productName = CGXHello;
@@ -514,7 +372,6 @@
 				1DF06B721CF1B95A002E3AEF /* Frameworks */,
 				1DF06B731CF1B95A002E3AEF /* Headers */,
 				1DF06B741CF1B95A002E3AEF /* Resources */,
-				1D040B331CFEFD1A003DDCF2 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -524,25 +381,6 @@
 			productName = CGIKit;
 			productReference = 1DF06B761CF1B95A002E3AEF /* CGIKit.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		1DF06BBC1CF235EC002E3AEF /* CGIKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1DF06BC51CF235EC002E3AEF /* Build configuration list for PBXNativeTarget "CGIKitTests" */;
-			buildPhases = (
-				1DF06BB91CF235EC002E3AEF /* Sources */,
-				1DF06BBA1CF235EC002E3AEF /* Frameworks */,
-				1DF06BBB1CF235EC002E3AEF /* Resources */,
-				1DF06BC81CF235F7002E3AEF /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1DF06BC41CF235EC002E3AEF /* PBXTargetDependency */,
-			);
-			name = CGIKitTests;
-			productName = CGIKitTests;
-			productReference = 1DF06BBD1CF235EC002E3AEF /* CGIKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -554,13 +392,13 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = DreamCity;
 				TargetAttributes = {
+					1D040B7B1CFF2A2A003DDCF2 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					1D0782061CFC8693009ED89D = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					1DF06B751CF1B95A002E3AEF = {
-						CreatedOnToolsVersion = 7.3.1;
-					};
-					1DF06BBC1CF235EC002E3AEF = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -585,7 +423,7 @@
 			projectRoot = "";
 			targets = (
 				1DF06B751CF1B95A002E3AEF /* CGIKit */,
-				1DF06BBC1CF235EC002E3AEF /* CGIKitTests */,
+				1D040B7B1CFF2A2A003DDCF2 /* WebUIKit */,
 				1D0782061CFC8693009ED89D /* CGXHello */,
 			);
 		};
@@ -609,6 +447,14 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1D040B7A1CFF2A2A003DDCF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D040B891CFF2BED003DDCF2 /* Web in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D0782051CFC8693009ED89D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -623,20 +469,21 @@
 				1D040B701CFF1BC8003DDCF2 /* exception.html in Resources */,
 				1D040B6E1CFF1884003DDCF2 /* unhandled.html in Resources */,
 				1D040B681CFF1037003DDCF2 /* mime.json in Resources */,
+				1D040B8B1CFF2C16003DDCF2 /* Web in Resources */,
 				1D040B761CFF2141003DDCF2 /* error.html in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1DF06BBB1CF235EC002E3AEF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1D040B771CFF2A2A003DDCF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D0782031CFC8693009ED89D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -665,18 +512,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1DF06BB91CF235EC002E3AEF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1DF06BC01CF235EC002E3AEF /* CGIKitTests.m in Sources */,
-				1D0781E91CF94689009ED89D /* CGIRequestTestSwift.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1D040B821CFF2A2A003DDCF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D040B7B1CFF2A2A003DDCF2 /* WebUIKit */;
+			targetProxy = 1D040B811CFF2A2A003DDCF2 /* PBXContainerItemProxy */;
+		};
 		1D07821C1CFC86C0009ED89D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1DF06B751CF1B95A002E3AEF /* CGIKit */;
@@ -687,14 +530,45 @@
 			name = CGXFastCGI;
 			targetProxy = 1D0782201CFC86D9009ED89D /* PBXContainerItemProxy */;
 		};
-		1DF06BC41CF235EC002E3AEF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1DF06B751CF1B95A002E3AEF /* CGIKit */;
-			targetProxy = 1DF06BC31CF235EC002E3AEF /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1D040B861CFF2A2A003DDCF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = WebUIKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = info.maxchan.WebUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1D040B871CFF2A2A003DDCF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = WebUIKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = info.maxchan.WebUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		1D0782161CFC8693009ED89D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -842,36 +716,17 @@
 			};
 			name = Release;
 		};
-		1DF06BC61CF235EC002E3AEF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = CGIKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = info.maxchan.CGIKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CGIKitTests/CGIKitTests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		1DF06BC71CF235EC002E3AEF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = CGIKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = info.maxchan.CGIKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CGIKitTests/CGIKitTests-Bridging-Header.h";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1D040B851CFF2A2A003DDCF2 /* Build configuration list for PBXNativeTarget "WebUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D040B861CFF2A2A003DDCF2 /* Debug */,
+				1D040B871CFF2A2A003DDCF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1D0782151CFC8693009ED89D /* Build configuration list for PBXNativeTarget "CGXHello" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -895,15 +750,6 @@
 			buildConfigurations = (
 				1DF06B7F1CF1B95A002E3AEF /* Debug */,
 				1DF06B801CF1B95A002E3AEF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1DF06BC51CF235EC002E3AEF /* Build configuration list for PBXNativeTarget "CGIKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1DF06BC61CF235EC002E3AEF /* Debug */,
-				1DF06BC71CF235EC002E3AEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

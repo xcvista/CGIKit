@@ -4,3 +4,6 @@
 [submodule "CGIKit/Web"]
 	path = CGIKit/Web
 	url = git@github.com:xcvista/CGIKit-Web.git
+[submodule "WebUIKit/Web"]
+	path = WebUIKit/Web
+	url = git@github.com:xcvista/WebUIKit-Web.git
