@@ -25,6 +25,15 @@ NSString *const CGISpecialPathMarker = @"/.CGIKit/";
 
 static NSMutableDictionary<NSString *, NSBundle *> *_CGXLoadedPlugins;
 
+@implementation CGIContext (CGIListenerSetter)
+
+- (void)setListener:(CGIListener *)listener
+{
+    _listener = listener;
+}
+
+@end
+
 @implementation CGIListener
 {
 @private
@@ -84,6 +93,11 @@ static NSMutableDictionary<NSString *, NSBundle *> *_CGXLoadedPlugins;
 + (NSString *)listenerType
 {
     return nil;
+}
+
+- (NSString *)listenerType
+{
+    return [[self class] listenerType];
 }
 
 + (void)load
@@ -297,43 +311,61 @@ CGXExceptionHandler *_CGXExceptionHandler;
         [_syncLock unlock];
     }
     
-    @try
+    context.listener = self;
+    
+    if ([self.delegate respondsToSelector:@selector(listener:didAcceptContext:)])
+        [self.delegate listener:self didAcceptContext:context];
+    
+    NSRange marker = [context.request.requestURI rangeOfString:CGISpecialPathMarker options:NSBackwardsSearch];
+    id<CGIContextHandler> handler = nil;
+    
+    if (marker.location != NSNotFound)
     {
-        if ([self.delegate respondsToSelector:@selector(listener:didAcceptContext:)])
-            [self.delegate listener:self didAcceptContext:context];
-        
-        NSRange marker = [context.request.requestURI rangeOfString:CGISpecialPathMarker options:NSBackwardsSearch];
-        if (marker.location != NSNotFound)
-        {
-            NSString *path = [context.request.requestURI substringFromIndex:NSMaxRange(marker)];
-            NSString *directory = path.pathComponents.firstObject;
-            id<CGIContextHandler> handler = [[self class] handlerForSpecialPath:directory];
-            if (handler)
-            {
-                objc_setAssociatedObject(context, @selector(handleContext:), path, OBJC_ASSOCIATION_RETAIN);
-                [handler handleContext:context];
-            }
-            else
-                marker.location = NSNotFound;
-        }
-        
-        if (marker.location == NSNotFound)
-        {
-            id<CGIContextHandler> handler = [self handlerForContext:context];
-            if (handler)
-                [handler handleContext:context];
-            else
-                [self handleContext:context];
-        }
+        NSString *path = [context.request.requestURI substringFromIndex:NSMaxRange(marker)];
+        NSString *directory = path.pathComponents.firstObject;
+        handler = [[self class] handlerForSpecialPath:directory];
+        if (handler)
+            objc_setAssociatedObject(context, @selector(handleContext:), path, OBJC_ASSOCIATION_RETAIN);
+        else
+            marker.location = NSNotFound;
     }
-    @catch (NSException *exception)
+    if (marker.location == NSNotFound)
+        handler = [self handlerForContext:context];
+    if (!handler)
+        handler = self;
+    
+    NSThread *targetThread = ([handler respondsToSelector:@selector(threadForContext:)]) ? [handler threadForContext:context] : [self threadForContext:context];
+    NSDictionary *info = @{@"handler": handler, @"context": context};
+    if (targetThread)
+        [self performSelector:@selector(_handleContext:)
+                     onThread:targetThread
+                   withObject:info
+                waitUntilDone:NO];
+    else
+        [self performSelectorInBackground:@selector(_handleContext:)
+                               withObject:info];
+}
+
+- (void)_handleContext:(NSDictionary *)info
+{
+    @autoreleasepool
     {
-        objc_setAssociatedObject(context, (__bridge const void *)([NSException class]), exception, OBJC_ASSOCIATION_RETAIN);
-        [_CGXExceptionHandler handleContext:context];
-    }
-    @finally
-    {
-        [context.response send];
+        id<CGIContextHandler> handler = info[@"handler"];
+        CGIContext *context = info[@"context"];
+        
+        @try
+        {
+            [handler handleContext:context];
+        }
+        @catch (NSException *exception)
+        {
+            objc_setAssociatedObject(context, (__bridge const void *)([NSException class]), exception, OBJC_ASSOCIATION_RETAIN);
+            [_CGXExceptionHandler handleContext:context];
+        }
+        @finally
+        {
+            [context.response send];
+        }
     }
 }
 
@@ -379,6 +411,13 @@ CGXExceptionHandler *_CGXExceptionHandler;
         id<CGIContextHandler> handler = [[self class] handlerForSpecialPath:CGISpecialPathMarker];
         [handler handleContext:context];
     }
+}
+
+- (NSThread *)threadForContext:(CGIContext *)context
+{
+    if ([self.delegate respondsToSelector:@selector(listener:threadForContext:)])
+        return [self.delegate listener:self threadForContext:context];
+    return nil;
 }
 
 @end

@@ -10,6 +10,7 @@
 
 #import "CGICookie.h"
 #import "CGXErrorHandler.h"
+#import "CGXSystemInfoHandler.h"
 
 #import <pthread.h>
 
@@ -353,6 +354,21 @@ void _CGXErrorHandlerInit(void)
     
     objc_setAssociatedObject(_context, (__bridge const void *)([NSError class]), error, OBJC_ASSOCIATION_RETAIN);
     [_CGXErrorHandler handleContext:_context];
+}
+
+CGXSystemInfoHandler *_CGXSystemInfoHandler;
+pthread_once_t _CGXSystemInfoToken = PTHREAD_ONCE_INIT;
+
+void _CGXSystemInfoHandlerInit(void)
+{
+    _CGXSystemInfoHandler = [[CGXSystemInfoHandler alloc] init];
+}
+
+- (void)systemInformation
+{
+    pthread_once(&_CGXSystemInfoToken, _CGXSystemInfoHandlerInit);
+    
+    [_CGXSystemInfoHandler handleContext:_context];
 }
 
 - (void)sendHeaders

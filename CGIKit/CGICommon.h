@@ -21,6 +21,14 @@
 
 #if __OBJC__
 #import <Foundation/Foundation.h>
+
+@interface NSObject (CGIHTMLDescription)
+
+@property (readonly) NSString *descriptionInHTML;
+@property (readonly) NSString *descriptionInInnerHTML;
+
+@end
+
 #else
 #include <CoreFoundation/CoreFoundation.h>
 #endif

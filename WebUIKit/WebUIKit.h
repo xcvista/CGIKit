@@ -6,7 +6,7 @@
 //  Copyright © 2016 DreamCity. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <CGIKit/CGIKit.h>
 
 //! Project version number for WebUIKit.
 FOUNDATION_EXPORT double WebUIKitVersionNumber;
@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char WebUIKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <WebUIKit/PublicHeader.h>
 
-
+#import <WebUIKit/CGIApplication.h>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CGIKit System Information</title>
+        
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <!-- Embedded fonts -->
+        <link rel="stylesheet" type="text/css" href=".CGIKit/CGIKit/sf-ui.css" />
+        <link rel="stylesheet" type="text/css" href=".CGIKit/CGIKit/source-code-pro.css" />
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href=".CGIKit/CGIKit/microcms.css" />
+        <link rel="stylesheet" type="text/css" href=".CGIKit/CGIKit/navbar.css" />
+    </head>
+    <body>
+        <script type="text/javascript" src=".CGIKit/CGIKit/jquery.js"></script>
+        <header class="header-title">
+            <div class="header-title">
+                <h1 class="header-title">CGIKit System Information</h1>
+            </div>
+        </header>
+        <div class="main">
+            <h1>CGIKit X, Version 10.0</h1>
+            <p>The CGIKit Web Development Kit.</p>
+            <h2 id="sysinfo">System Information</h2>
+            <table>
+                <tr><th>Key</th><th>Value</th>
+                <tr><th id="uname">System</th><td>%%UNAME%%</td></tr>
+                <tr><th id="listener">Listener Type</th><td>%%LISTENER%%</td></tr>
+                <tr><th colspan="2" id="env">Environment variables</th></tr>
+                %%ENVIRONMENT%%
+            </table>
+            <h2 id="http-env">HTTP Variables</h2>
+            <table>
+                <tr><th>Key</th><th>Value</th>
+                %%HTTPENVP%%
+            </table>
+            <h2 id="headers">HTTP Headers</h2>
+            <table>
+                <tr><th>Key</th><th>Value</th>
+                %%HEADERS%%
+            </table>
+            <h2 id="query-string">HTTP Query String</h2>
+            <table>
+                <tr><th>Key</th><th>Value</th>
+                %%QUERY%%
+            </table>
+            <h2 id="form">HTTP Form</h2>
+            <table>
+                <tr><th>Key</th><th>Value</th>
+                %%FORM%%
+            </table>
+            <h2 id="cookies">HTTP Cookies</h2>
+            <table>
+                <tr><th>Key</th><th>Value</th>
+                %%COOKIES%%
+            </table>
+            <hr />
+            <address><a href="https://github.com/xcvista/CGIKit">CGIKit X</a> &copy; 2016 <a href="https://en.maxchan.info/">Max Chan</a></address>
+        </div>
+    </body>
+</html>

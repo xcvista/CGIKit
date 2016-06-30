@@ -16,7 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol CGIContextHandler <NSObject>
 
+@required
 - (void)handleContext:(CGIContext *)context;
+
+@optional
+- (nullable)threadForContext:(CGIContext *)context;
 
 @end
 
@@ -27,14 +31,12 @@ NS_ASSUME_NONNULL_BEGIN
     CGIRequest *_request;
     CGIResponse *_response;
     CGIServerHelper *_server;
-    __nullable id _session;
 }
 
 @property (readonly, weak) CGIListener *listener;
 @property (readonly) CGIRequest *request;
 @property (readonly) CGIResponse *response;
 @property (readonly) CGIServerHelper *server;
-@property (nullable) id session;
 
 @end
 

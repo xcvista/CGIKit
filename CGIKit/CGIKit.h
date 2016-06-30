@@ -6,7 +6,7 @@
 //  Copyright © 2016 DreamCity. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for CGIKit.
 FOUNDATION_EXPORT double CGIKitVersionNumber;

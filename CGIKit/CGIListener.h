@@ -6,7 +6,7 @@
 //  Copyright © 2016 DreamCity. All rights reserved.
 //
 
-#import <CGIKit/CGICommon.h>
+#import <CGIKit/CGIContext.h>
 
 @class CGIContext;
 @class CGIListener;
@@ -29,6 +29,7 @@ FOUNDATION_EXPORT NSString *const CGISpecialPathMarker;
 - (void)listener:(CGIListener *)listener didAcceptContext:(CGIContext *)context;
 - (void)listener:(CGIListener *)listener didEncounterError:(NSError *)error;
 - (nullable id<CGIContextHandler>)listener:(CGIListener *)listener handlerForContext:(CGIContext *)context;
+- (nullable NSThread *)listener:(CGIListener *)listener threadForContext:(CGIContext *)context;
 - (void)listener:(CGIListener *)listener handleContext:(CGIContext *)context;
 
 @end
@@ -37,6 +38,7 @@ FOUNDATION_EXPORT NSString *const CGISpecialPathMarker;
 
 @property (nullable, weak) id<CGIListenerDelegate> delegate;
 @property (readonly, assign, getter=isRunning) BOOL running;
+@property (readonly) NSString *listenerType;
 
 + (void)scanForPluginsInDirectoryWithURL:(NSURL *)url;
 + (instancetype)listenerWithType:(NSString *)type;
@@ -64,9 +66,10 @@ FOUNDATION_EXPORT NSString *const CGISpecialPathMarker;
 
 @end
 
-@interface CGIListener (CGIListenerDelegate)
+@interface CGIListener (CGIListenerDelegate) <CGIContextHandler>
 
 - (nullable id<CGIContextHandler>)handlerForContext:(CGIContext *)context;
+- (nullable NSThread *)threadForContext:(CGIContext *)context;
 - (void)handleContext:(CGIContext *)context;
 
 @end

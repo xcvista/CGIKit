@@ -10,12 +10,9 @@
 
 @implementation CGIAppDelegate
 
-- (void)listener:(CGIListener *)listener handleContextX:(CGIContext *)context
+- (void)listener:(CGIListener *)listener handleContext:(CGIContext *)context
 {
-    NSLog(@"CTX: %@ %@", listener, context);
-    context.response[CGIHTTPHeaderContentType] = @"text/plain";
-    [context.server log:@"hello"];
-    [context.response.outputStream writeString:@"hello" usingEncoding:NSUTF8StringEncoding withError:NULL];
+    [context.response systemInformation];
 }
 
 - (void)listener:(CGIListener *)listener didEncounterError:(NSError *)error
